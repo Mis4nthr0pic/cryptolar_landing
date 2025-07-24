@@ -2,26 +2,30 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 
-module.exports = {
-  entry: './src/main.jsx',
-  output: {
-    path: path.resolve(__dirname, 'dist'),
-    filename: 'bundle.js',
-    clean: true,
-  },
-  mode: 'development',
-  devServer: {
-    static: [
-      {
-        directory: path.join(__dirname, 'public'),
-        publicPath: '/',
-      }
-    ],
-    port: 3000,
-    open: true,
-    hot: true,
-    historyApiFallback: true,
-  },
+module.exports = (env, argv) => {
+  const isProduction = argv.mode === 'production';
+  
+  return {
+    entry: './src/main.jsx',
+    output: {
+      path: path.resolve(__dirname, 'dist'),
+      filename: isProduction ? '[name].[contenthash].js' : 'bundle.js',
+      clean: true,
+      publicPath: '/',
+    },
+    mode: isProduction ? 'production' : 'development',
+    devServer: !isProduction ? {
+      static: [
+        {
+          directory: path.join(__dirname, 'public'),
+          publicPath: '/',
+        }
+      ],
+      port: 3000,
+      open: true,
+      hot: true,
+      historyApiFallback: true,
+    } : undefined,
   module: {
     rules: [
       {
@@ -64,4 +68,5 @@ module.exports = {
       ],
     }),
   ],
+  };
 };
