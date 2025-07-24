@@ -5,7 +5,9 @@
   "scripts": {
     "dev": "webpack serve",
     "build": "webpack --mode=production",
-    "start": "webpack serve --mode=development"
+    "start": "webpack serve --mode=development",
+    "vercel-build": "npm install --legacy-peer-deps && npm run build"
+
   },
   "keywords": [
     "ethereum",
