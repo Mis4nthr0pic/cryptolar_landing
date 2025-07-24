@@ -1,0 +1,135 @@
+/* Prize highlighting animations */
+.prize-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.prize-container::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: conic-gradient(from 0deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+  animation: prizeRotate 3s linear infinite;
+}
+
+.prize-glow {
+  box-shadow: 
+    0 0 30px rgba(255, 193, 7, 0.6),
+    0 0 60px rgba(255, 193, 7, 0.4),
+    0 0 90px rgba(255, 193, 7, 0.2);
+  animation: prizeGlowPulse 2s ease-in-out infinite alternate;
+}
+
+.prize-amount-large {
+  animation: prizeBounce 2s ease-in-out infinite;
+  text-shadow: 
+    2px 2px 4px rgba(0, 0, 0, 0.5),
+    0 0 20px rgba(255, 193, 7, 0.8);
+}
+
+.floating-trophy {
+  animation: floatingTrophy 3s ease-in-out infinite;
+  filter: drop-shadow(0 0 10px rgba(255, 193, 7, 0.8));
+}
+
+@keyframes prizeRotate {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes prizeGlowPulse {
+  0% {
+    box-shadow: 
+      0 0 30px rgba(255, 193, 7, 0.6),
+      0 0 60px rgba(255, 193, 7, 0.4),
+      0 0 90px rgba(255, 193, 7, 0.2);
+  }
+  100% {
+    box-shadow: 
+      0 0 40px rgba(255, 193, 7, 0.8),
+      0 0 80px rgba(255, 193, 7, 0.6),
+      0 0 120px rgba(255, 193, 7, 0.4);
+  }
+}
+
+@keyframes prizeBounce {
+  0%, 100% { 
+    transform: scale(1);
+    text-shadow: 
+      2px 2px 4px rgba(0, 0, 0, 0.5),
+      0 0 20px rgba(255, 193, 7, 0.8);
+  }
+  50% { 
+    transform: scale(1.05);
+    text-shadow: 
+      2px 2px 4px rgba(0, 0, 0, 0.5),
+      0 0 30px rgba(255, 193, 7, 1),
+      0 0 40px rgba(255, 193, 7, 0.6);
+  }
+}
+
+@keyframes floatingTrophy {
+  0%, 100% { 
+    transform: translateY(0px) rotate(-5deg);
+  }
+  50% { 
+    transform: translateY(-10px) rotate(5deg);
+  }
+}
+
+/* Cairo visual motifs */
+@keyframes cairoSymbol {
+  0% { 
+    transform: translateY(100vh) rotate(0deg) scale(0.5);
+    opacity: 0;
+  }
+  10%, 90% { 
+    opacity: 0.3;
+  }
+  50% { 
+    transform: translateY(50vh) rotate(180deg) scale(1);
+    opacity: 0.6;
+  }
+  100% { 
+    transform: translateY(-10vh) rotate(360deg) scale(0.3);
+    opacity: 0;
+  }
+}
+
+@keyframes recursiveProof {
+  0%, 100% { 
+    transform: scale(1) rotate(0deg);
+    opacity: 0.2;
+  }
+  25% { 
+    transform: scale(1.2) rotate(90deg);
+    opacity: 0.4;
+  }
+  50% { 
+    transform: scale(0.8) rotate(180deg);
+    opacity: 0.6;
+  }
+  75% { 
+    transform: scale(1.1) rotate(270deg);
+    opacity: 0.3;
+  }
+}
+
+.cairo-motif {
+  position: absolute;
+  color: rgba(255, 140, 0, 0.3);
+  font-family: 'Courier New', monospace;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.block-shape {
+  position: absolute;
+  background: linear-gradient(45deg, rgba(77, 101, 255, 0.1), rgba(37, 99, 235, 0.1));
+  border: 1px solid rgba(77, 101, 255, 0.2);
+  pointer-events: none;
+  z-index: 1;
+}

@@ -1,0 +1,213 @@
+{
+  "hero": {
+      "date": "16 de agosto de 2025 — Florianópolis",
+      "tagline": "Donde Ethereum se siente como en casa.",
+      "subtitle": "Un encuentro exclusivo de innovadores de blockchain con charlas de los principales expertos de Ethereum en el hermoso escenario de Florianópolis.",
+      "sponsors": "Patrocinadores",
+      "scroll": "Desplazar"
+  },
+  "about": {
+    "title": "Una Inmersión Web3 en el Paraíso",
+    "subtitle": {
+      "intro": "Nuestro objetivo es explorar el ecosistema Ethereum desde diferentes perspectivas:",
+      "topics": ["desarrollo", "seguridad", "mercado", "innovación", "gobernanza", "comunidad", "inversión"],
+      "audience": "Si desarrollas, investigas, inviertes o simplemente sientes curiosidad por el potencial de Web3, este evento es para ti.",
+      "hackathon": "Además de un hackathon intensivo Starknet donde desarrolladores compiten por **R$ 15.000 en premios** construyendo el futuro de las aplicaciones descentralizadas."
+    },
+    "sponsors": "Patrocinadores Principales",
+    "details": {
+      "date": "16 de Agosto, 2025",
+      "location": "Florianópolis, SC",
+      "format": "Charlas de industria + hackathon Starknet"
+    },
+    "buttons": {
+      "register": "Registrarse en el Evento",
+      "learnMore": "Saber Más",
+      "registerOnLuma": "REGISTRARSE EN LUMA"
+    }
+  },
+  "hackathon": {
+    "title": "Starknet Hackathon",
+    "prizeSubtitle": "en premios para los mejores proyectos",
+    "features": {
+      "scalability": "Desbloquea una escalabilidad masiva para tus dApps en Ethereum.",
+      "cairo": "Construye aplicaciones demostrables y seguras con el lenguaje Cairo.",
+      "layer2": "Benefíciate de la seguridad de Ethereum con costos de transacción más bajos.",
+      "ecosystem": "Únete a un ecosistema de desarrolladores vibrante y en rápido crecimiento.",
+      "cairo_coder": "IA para acelerar el desarrollo"
+    },
+    "details": {
+      "title": "Detalles del Hackathon",
+      "first": "1er Lugar: R$ 8.000",
+      "second": "2do Lugar: R$ 4.500",
+      "third": "3er Lugar: R$ 2.500",
+      "duration": "Duración: 48 horas",
+      "teams": "Equipos: 2-4 personas",
+      "date": "17 de Agosto de 2025 - 10 AM",
+      "location": "MOIC Digital"
+    },
+    "buttons": {
+      "about": "Acerca de Starknet",
+      "signup": "Inscribirse"
+    },
+    "buildathon": "BUILDATHON",
+    "prominentDate": "17 de Agosto de 2025",
+    "prominentTime": "09:00 BRT",
+    "total_prizes": "PREMIOS TOTALES",
+    "prize_money": "R$ 15.000",
+    "prize_description": "para los mejores proyectos",
+    "evaluators": "Evaluadores",
+    "evaluator_role": "Evaluador del Hackathon",
+    "call_to_action_title": "¿Listo para Construir?",
+    "hackathon_tech": "Tecnologías del Hackathon",
+    "dateToBeAnnounced": "Fecha Por Anunciar",
+    "dateToBeAnnouncedDesc": "La fecha del hackathon será revelada pronto. ¡Mantente atento para actualizaciones!",
+    "starknet_intro": "Starknet es un revolucionario ZK-Rollup que proporciona una escalabilidad masiva a Ethereum, sin sacrificar la seguridad. Al construir sobre Starknet, estás a la vanguardia de la innovación blockchain. Únete a nuestro hackathon y construye el futuro de las dApps.",
+    "zk_rollups_title": "¿Qué son los ZK-Rollups?",
+    "zk_rollups_desc": "Los ZK-Rollups son soluciones de escalado de Layer 2 que agrupan cientos de transacciones en una sola en la main chain de Ethereum. Esto reduce drásticamente las gas fees y aumenta el throughput, haciendo que las dApps sean más eficientes y asequibles.",
+    "zk_proofs_title": "El Poder de las Zero-Knowledge Proofs",
+    "zk_proofs_desc": "Las Zero-Knowledge Proofs permiten verificar la veracidad de una declaración sin revelar la declaración en sí. En blockchain, esto significa mayor privacidad y seguridad, ya que las transacciones se pueden validar sin exponer datos confidenciales.",
+    "starknet_description": "ZK-Rollup Layer 2 for Ethereum with massive scalability and zero-knowledge proofs",
+    "cairo_description": "Lenguaje nativo para contratos inteligentes de Starknet, optimizado para pruebas STARK",
+    "cairo_coder_description": "IA para la generación de código Cairo con soporte IDE/CLI para acelerar el desarrollo",
+    "starknetTitle": "Starknet",
+    "cairoTitle": "Cairo",
+    "cairoCoderTitle": "Cairo-Coder",
+    "starknet_docs": "Documentación de Starknet",
+    "cairo_docs": "Documentación de Cairo",
+    "cairo_coder": "Cairo-Coder",
+    "learn_from_the_best": "Aprende de los Mejores",
+    "ceo_insights": "Información directa del CEO de Starknet",
+    "rules_agenda_title": "Reglas y Agenda del Hackathon",
+    "rules_agenda_desc": "Las reglas detalladas, los criterios de evaluación y el cronograma completo del hackathon se publicarán pronto. ¡Mantente atento!",
+    "features": {
+      "cairo_coder": "IA para acelerar el desarrollo"
+    }
+  },
+  "talks": {
+    "title": "Charlas",
+    "cards": {
+      "defi": {
+        "title": "Verano DeFi",
+        "description": "Explora el renacimiento de las finanzas descentralizadas, protocolos innovadores y oportunidades emergentes en el ecosistema DeFi."
+      },
+      "daos": {
+        "title": "DAOs y sus riesgos",
+        "description": "Entiende el futuro de la gobernanza descentralizada y cómo las DAOs están revolucionando la organización colectiva."
+      },
+      "marketing": {
+        "title": "Marketing de Cripto",
+        "description": "Estrategias para promover proyectos blockchain, construir comunidades y navegar el panorama regulatorio."
+      },
+      "security": {
+        "title": "Seguridad en Cripto",
+        "description": "Aprende sobre vulnerabilidades, ataques históricos y las mejores prácticas para construir sistemas seguros."
+      },
+      "l2s": {
+        "title": "Layer2s y Sidechains",
+        "description": "Conecta diferentes blockchains y explora las soluciones de interoperabilidad que unen el ecosistema multi-cadena."
+      },
+      "ai": {
+        "title": "IA",
+        "description": "Descubre cómo la inteligencia artificial se está integrando con blockchain para crear nuevas posibilidades."
+      },
+      "oracles": {
+        "title": "Oráculos",
+        "description": "Explora cómo los oráculos blockchain conectan datos on-chain y off-chain, permitiendo que los contratos inteligentes interactúen con información del mundo real."
+      },
+      "network_societies": {
+        "title": "Sociedades en Red",
+        "description": "Entiende cómo las redes descentralizadas están remodelando estructuras sociales y creando nuevas formas de gobernanza digital y organización comunitaria."
+      },
+      "and_more": {
+        "title": "Y Mucho Más...",
+        "description": "¡Temas adicionales y oradores sorpresa que se anunciarán pronto!"
+      }
+    }
+  },
+  "language": {
+    "portuguese": "Português",
+    "english": "English",
+    "spanish": "Español"
+  },
+  "speakers": {
+    "title": "Oradores Por Anunciar",
+    "social_link": "Ver Perfil",
+    "to_be_announced_message": "¡Nuestra emocionante lista de oradores será anunciada pronto! Mantente atento a las actualizaciones.",
+    "comingSoon": "Próximamente",
+    "comingSoonDesc": "¡Nuestra increíble lista de oradores será revelada pronto! Mantente atento para anuncios.",
+    "industryLeaders": "Oradores Líderes de la Industria",
+    "industryLeadersDesc": "Nuestros oradores líderes de la industria serán anunciados pronto, mantente atento a los próximos anuncios",
+    "toBeAnnounced": "Por Anunciar",
+    "toBeAnnouncedDesc": "¡Nuestra increíble lista de oradores será revelada pronto! Mantente atento para anuncios."
+  },
+  "companies": {
+    "title": "Empresas Invitadas",
+    "social_link": "Ver Perfil",
+    "to_be_announced_message": "¡Nuestra emocionante lista de empresas invitadas será anunciada pronto! Mantente atento a las actualizaciones.",
+    "comingSoon": "Próximamente",
+    "comingSoonDesc": "¡Nuestros increíbles socios empresariales serán revelados pronto! Mantente atento para anuncios.",
+    "industryLeaders": "Empresas Líderes de la Industria",
+    "industryLeadersDesc": "Nuestros socios empresariales líderes de la industria serán anunciados pronto, mantente atento a los próximos anuncios",
+    "toBeAnnounced": "Por Anunciar",
+    "toBeAnnouncedDesc": "¡Nuestros increíbles socios empresariales serán revelados pronto! Mantente atento para anuncios."
+  },
+  "partners": {
+    "title": "Socios",
+    "stillToConfirm": "Aún Por Confirmar Socios",
+    "stillToConfirmDesc": "¡Estamos finalizando asociaciones con empresas increíbles. Vuelve pronto para actualizaciones!",
+    "toBeAnnounced": "Por Anunciar",
+    "toBeAnnouncedDesc": "¡Nuestros increíbles socios serán revelados pronto! Mantente atento para anuncios."
+  },
+  "location": {
+    "title": "Ubicación del Evento",
+    "subtitle": "FounderHaus • Jurerê Internacional, Florianópolis",
+    "freeFoodTitle": "🍕 COMIDA Y BEBIDAS GRATIS 🥤",
+    "freeFoodDesc": "Refrigerios gratuitos durante todo el evento",
+    "founderHausTitle": "FounderHaus",
+    "founderHausDesc1": "Hub de innovación en Florianópolis enfocado en abordar desafíos globales a través de la tecnología. Combina infraestructura física y virtual para apoyar a emprendedores de próxima generación que construyen soluciones resilientes y sostenibles. **Comida y bebidas gratuitas serán proporcionadas durante todo el evento.**",
+    "founderHausDesc2": "El espacio alberga eventos técnicos, retiros de empresas, reuniones de M&A, bootcamps y programas de aceleración para startups y nuevas unidades de negocio.",
+    "addressTitle": "📍 Dirección",
+    "addressLine1": "Av. dos Merlins, 156",
+    "addressLine2": "Jurerê Internacional",
+    "addressLine3": "Florianópolis - SC",
+    "addressLine4": "88053-370",
+    "feature1": "Comida Gratis",
+    "feature2": "WiFi de Alta Velocidad",
+    "feature3": "Estacionamiento Disponible"
+  },
+  "navbar": {
+    "home": "Inicio",
+    "about": "Acerca de",
+    "hackathon": "Hackathon",
+    "tracks": "Pistas",
+    "speakers": "Oradores",
+    "companies": "Empresas",
+    "location": "Ubicación"
+  },
+  "footer": {
+    "rights_reserved": "Todos los derechos reservados"
+  },
+  "blocks_until_event": "¡Estimado {blocks} bloques hasta el evento!",
+  "blocks_disclaimer": "(Estimación basada en el tiempo promedio de bloque. Los datos en tiempo real requieren un servicio de backend.)",
+  "blocks_loading": "Cargando cuenta regresiva de bloques...",
+  "blocks_fetch_error": "Error al cargar la cuenta regresiva de bloques. Por favor, inténtalo de nuevo más tarde.",
+  "logistics": {
+    "title": "Logística e Información Práctica",
+    "food_drinks_title": "Comida y Bebidas",
+    "food_drinks_desc": "Se ofrecerá comida y bebidas de cortesía el 16 de agosto.",
+    "food_drinks_note": "Por favor, infórmenos sobre cualquier restricción dietética durante el registro.",
+    "transportation_title": "Transporte",
+    "transportation_desc": "Próximamente estará disponible información sobre cómo llegar al lugar en transporte público y opciones de estacionamiento.",
+    "wifi_title": "Acceso Wi-Fi",
+    "wifi_desc": "Wi-Fi gratuito estará disponible en todo el recinto para todos los asistentes."
+  },
+  "crypto": {
+    "livePrices": "Precios en Vivo",
+    "loading": "Cargando...",
+    "close": "Cerrar",
+    "ethereum": "Ethereum",
+    "bitcoin": "Bitcoin",
+    "updated": "Actualizado"
+  }
+}
