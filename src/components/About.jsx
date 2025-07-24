@@ -31,109 +31,100 @@ const About = ({ id }) => {
         </div>
       </div>
       
-      {/* Event Info Panel - Mobile & Desktop Responsive */}
-      <div className="absolute inset-x-4 bottom-8 md:right-8 md:top-1/2 md:transform md:-translate-y-1/2 md:inset-x-auto md:bottom-auto md:w-3/5 lg:w-2/3 xl:w-3/5 flex justify-center md:justify-start z-20">
-        <div 
-          className="relative max-w-lg lg:max-w-xl xl:max-w-2xl w-full text-white group"
-          style={{
-            background: 'linear-gradient(135deg, rgba(0,0,0,0.95) 0%, rgba(8,15,30,0.95) 50%, rgba(0,0,0,0.98) 100%)',
-            backdropFilter: 'blur(20px)',
-            borderRadius: '24px',
-            padding: '2rem',
-            boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.7)',
-            transform: 'none'
-          }}
-        >
-          {/* Clean Rotating Glow Border */}
-          <div className="absolute inset-0 rounded-3xl">
-            <div 
-              className="absolute inset-0 rounded-3xl p-[2px] animate-border-rotate"
-              style={{
-                background: 'linear-gradient(45deg, #3b82f6, #8b5cf6, #ec4899, #06b6d4, #3b82f6)',
-                backgroundSize: '400% 400%'
-              }}
-            >
-              <div 
-                className="w-full h-full rounded-3xl"
-                style={{
-                  background: 'linear-gradient(135deg, rgba(0,0,0,0.95) 0%, rgba(8,15,30,0.95) 50%, rgba(0,0,0,0.98) 100%)',
-                }}
-              ></div>
-            </div>
-            
-            {/* Outer glow effect */}
-            <div 
-              className="absolute inset-[-4px] rounded-3xl opacity-60 blur-lg animate-border-rotate"
-              style={{
-                background: 'linear-gradient(45deg, #3b82f6, #8b5cf6, #ec4899, #06b6d4, #3b82f6)',
-                backgroundSize: '400% 400%'
-              }}
-            ></div>
-          </div>
-          
-          {/* Header with gradient title */}
-          <div className="relative z-10 text-center mb-6">
-            <h2 className="text-3xl md:text-4xl font-display font-bold mb-3 bg-gradient-to-r from-yellow-300 via-orange-300 to-yellow-400 bg-clip-text text-transparent">
+      {/* Multiple Content Boxes */}
+      <div className="absolute inset-2 md:inset-8 flex flex-col justify-start md:justify-center items-center z-20 pt-4 md:pt-0 overflow-y-auto max-h-screen">
+        
+        {/* Main Title Box */}
+        <div className="bg-gradient-to-br from-black/95 via-gray-900/90 to-black/95 backdrop-blur-xl rounded-2xl p-4 md:p-6 border border-white/30 shadow-2xl text-center max-w-2xl w-full mb-4 md:mb-6 relative overflow-hidden">
+          {/* Glossy overlay */}
+          <div className="absolute inset-0 bg-gradient-to-br from-white/10 via-transparent to-transparent rounded-2xl pointer-events-none"></div>
+          <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-yellow-400 via-orange-400 to-yellow-400 rounded-t-2xl"></div>
+          <div className="relative z-10">
+            <h2 className="text-xl md:text-3xl font-display font-bold mb-2 bg-gradient-to-r from-yellow-300 via-orange-300 to-yellow-400 bg-clip-text text-transparent">
               {t('about.title')}
             </h2>
-            <div className="text-lg text-cyan-200 mb-4 font-semibold">
+            <div className="text-cyan-200 font-semibold text-sm md:text-base">
               📅 {t('about.details.date')}
             </div>
-            <div className="text-gray-100 font-body leading-relaxed text-base md:text-lg font-normal space-y-4">
-              <p className="text-gray-200">
+          </div>
+        </div>
+
+        {/* Content Boxes Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-4 max-w-4xl w-full px-2 md:px-0">
+          
+          {/* What We Explore Box */}
+          <div className="bg-gradient-to-br from-black/95 via-gray-900/90 to-black/95 backdrop-blur-xl rounded-2xl p-4 md:p-5 border border-white/30 shadow-2xl text-white relative overflow-hidden">
+            {/* Glossy overlay */}
+            <div className="absolute inset-0 bg-gradient-to-br from-white/10 via-transparent to-transparent rounded-2xl pointer-events-none"></div>
+            <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-yellow-400 via-orange-400 to-yellow-400 rounded-t-2xl"></div>
+            <div className="relative z-10 text-center">
+              <h3 className="text-base md:text-lg font-semibold mb-2 md:mb-3 text-white">
                 {t('about.subtitle.intro')}
-              </p>
-              
-              <div className="flex flex-wrap justify-center gap-2 my-4">
+              </h3>
+              <div className="flex flex-wrap justify-center gap-1 md:gap-2">
                 {t('about.subtitle.topics', { returnObjects: true }).map((topic, index) => (
                   <span 
                     key={index}
-                    className="px-3 py-1 bg-gradient-to-r from-blue-500/20 to-purple-500/20 rounded-full text-sm font-medium border border-blue-400/30 text-blue-200"
+                    className="px-2 py-1 bg-gradient-to-r from-blue-500/30 to-cyan-500/30 rounded-full text-xs md:text-sm border border-blue-400/50 text-blue-200 shadow-lg backdrop-blur-sm"
                   >
                     {topic}
                   </span>
                 ))}
               </div>
-              
-              <p className="text-yellow-200 font-medium">
+            </div>
+          </div>
+
+          {/* Audience Box */}
+          <div className="bg-gradient-to-br from-black/95 via-gray-900/90 to-black/95 backdrop-blur-xl rounded-2xl p-4 md:p-5 border border-white/30 shadow-2xl text-white relative overflow-hidden">
+            {/* Glossy overlay */}
+            <div className="absolute inset-0 bg-gradient-to-br from-white/10 via-transparent to-transparent rounded-2xl pointer-events-none"></div>
+            <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-yellow-400 via-orange-400 to-yellow-400 rounded-t-2xl"></div>
+            <div className="relative z-10 text-center">
+              <h3 className="text-base md:text-lg font-semibold mb-2 md:mb-3 text-white">
+                Para Quem
+              </h3>
+              <p className="text-gray-200 text-xs md:text-sm">
                 {t('about.subtitle.audience')}
               </p>
-              
-              <p className="text-gray-200" dangerouslySetInnerHTML={{
-                __html: t('about.subtitle.hackathon').replace(/\*\*(.*?)\*\*/g, '<strong class="text-yellow-400 font-bold">$1</strong>')
-              }}>
-              </p>
             </div>
           </div>
-          
-          {/* Main Sponsors Section */}
-          <div className="relative z-10 mb-8 text-center">
-            <h3 className="text-lg font-semibold mb-4 text-cyan-200 flex items-center justify-center gap-2">
-              <span className="text-xl">🏆</span>
-              {t('about.sponsors')}
-            </h3>
-            <div className="flex items-center justify-center gap-6">
-              <a href="https://ethereumlatam.org" target="_blank" rel="noopener noreferrer" className="bg-white/15 rounded-xl p-4 backdrop-blur-sm border border-white/30 hover:bg-white/25 transition-all duration-300 transform hover:scale-105 w-32 h-20 flex items-center justify-center">
-                <img src="/images/sponsor_ethereum.svg" alt="Ethereum Latam" className="max-w-full max-h-full w-auto h-auto object-contain" />
-              </a>
-              <a href="https://starknet.io" target="_blank" rel="noopener noreferrer" className="bg-white/15 rounded-xl p-4 backdrop-blur-sm border border-white/30 hover:bg-white/25 transition-all duration-300 transform hover:scale-105 w-32 h-20 flex items-center justify-center">
-                <img src="/images/sponsor_starknet.png" alt="Starknet" className="max-w-full max-h-full w-auto h-auto object-contain" />
+
+          {/* Sponsors Box */}
+          <div className="bg-gradient-to-br from-black/95 via-gray-900/90 to-black/95 backdrop-blur-xl rounded-2xl p-4 md:p-5 border border-white/30 shadow-2xl text-white relative overflow-hidden">
+            {/* Glossy overlay */}
+            <div className="absolute inset-0 bg-gradient-to-br from-white/10 via-transparent to-transparent rounded-2xl pointer-events-none"></div>
+            <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-yellow-400 via-orange-400 to-yellow-400 rounded-t-2xl"></div>
+            <div className="relative z-10 text-center">
+              <h3 className="text-base md:text-lg font-semibold mb-2 md:mb-3 text-white">
+                {t('about.sponsors')}
+              </h3>
+              <div className="flex items-center justify-center gap-4 md:gap-6">
+                <img src="/images/sponsor_ethereum.svg" alt="Ethereum Latam" className="h-8 md:h-12 w-auto filter drop-shadow-lg" />
+                <img src="/images/sponsor_starknet.png" alt="Starknet" className="h-6 md:h-9 w-auto filter drop-shadow-lg" />
+              </div>
+            </div>
+          </div>
+
+          {/* CTA Box */}
+          <div className="bg-gradient-to-br from-black/95 via-gray-900/90 to-black/95 backdrop-blur-xl rounded-2xl p-4 md:p-5 border border-white/30 shadow-2xl text-white relative overflow-hidden">
+            {/* Glossy overlay */}
+            <div className="absolute inset-0 bg-gradient-to-br from-white/10 via-transparent to-transparent rounded-2xl pointer-events-none"></div>
+            <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-yellow-400 via-orange-400 to-yellow-400 rounded-t-2xl"></div>
+            <div className="relative z-10 flex flex-col items-center justify-center text-center">
+              <h3 className="text-base md:text-lg font-semibold mb-2 md:mb-3 text-white">
+                Participe
+              </h3>
+              <a 
+                href="https://lu.ma/cryptolar" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="bg-gradient-to-r from-yellow-400 to-orange-500 hover:from-yellow-500 hover:to-orange-600 text-black font-bold py-2 px-3 md:px-4 rounded-lg transition-all duration-300 transform hover:scale-105 text-xs md:text-sm shadow-lg"
+              >
+                📅 {t('about.buttons.registerOnLuma')}
               </a>
             </div>
           </div>
-          
-          {/* CTA Button */}
-          <div className="relative z-10 text-center">
-            <a 
-              href="https://lu.ma/cryptolar" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="inline-block bg-gradient-to-r from-yellow-400 to-orange-500 hover:from-yellow-500 hover:to-orange-600 text-black font-bold py-4 px-8 rounded-xl transition-all duration-300 transform hover:scale-105 hover:shadow-xl font-body text-base md:text-lg"
-            >
-              📅 {t('about.buttons.registerOnLuma')}
-            </a>
-          </div>
-          
+
         </div>
       </div>
       

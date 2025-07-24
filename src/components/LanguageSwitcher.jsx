@@ -10,8 +10,8 @@ const LanguageSwitcher = () => {
 
   const languages = [
     { code: 'pt', flag: '🇧🇷', label: t('language.pt') },
-    { code: 'en', flag: '🇺🇸', label: t('language.en') },
-    { code: 'es', flag: '🇪🇸', label: t('language.es') }
+    { code: 'es', flag: '🇦🇷', label: t('language.es') },
+    { code: 'en', flag: '🇺🇸', label: t('language.en') }
   ]
 
   return (
