@@ -5,8 +5,7 @@
   "scripts": {
     "dev": "webpack serve",
     "build": "webpack --mode=production",
-    "start": "webpack serve --mode=development",
-    "vercel-build": "npm install --legacy-peer-deps && npm run build"
+    "start": "webpack serve --mode=development"
 
   },
   "keywords": [
