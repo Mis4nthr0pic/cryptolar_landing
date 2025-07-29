@@ -4,7 +4,9 @@ import SectionNavigator from './SectionNavigator';
 
 const CompanyCard = ({ company, delay }) => {
   const smallerLogos = ['OpenSense'];
+  const biggerLogos = ['Ethereum Brasil'];
   const isSmaller = smallerLogos.includes(company.name);
+  const isBigger = biggerLogos.includes(company.name);
   
   return (
     <a 
@@ -22,7 +24,7 @@ const CompanyCard = ({ company, delay }) => {
         <img 
           src={`/images/${company.logo}`}
           alt={`${company.name} logo`}
-          className={`object-contain transition-all duration-500 group-hover:brightness-110 group-hover:contrast-105 group-hover:saturate-105 ${isSmaller ? 'max-w-[60%] max-h-[60%]' : 'max-w-[80%] max-h-[80%]'}`}
+          className={`object-contain transition-all duration-500 group-hover:brightness-110 group-hover:contrast-105 group-hover:saturate-105 ${isSmaller ? 'max-w-[60%] max-h-[60%]' : isBigger ? 'max-w-[95%] max-h-[95%]' : 'max-w-[80%] max-h-[80%]'}`}
           style={{ 
             filter: 'grayscale(100%) brightness(0) invert(1) drop-shadow(0 1px 3px rgba(0,0,0,0.2))',
             mixBlendMode: 'normal'
@@ -53,13 +55,13 @@ const InvitedCompanies = ({ id }) => {
     { name: 'NearX', logo: 'logo_nearx.webp', website: 'https://nearx.com.br/' },
     { name: 'ChainLink', logo: 'logo_chainlink.svg', website: 'https://chain.link/' },
     { name: 'Stellar', logo: 'logo_stellar.png', website: 'https://stellar.org/' },
-    { name: 'Dinamo', logo: 'logo_dinamo.png', website: 'https://dinamonetworks.com/' },
+    { name: 'Ethereum Brasil', logo: 'logo_ethbr.png', website: 'https://www.ethereumbrasil.com/' },
+    { name: 'Modular Crypto', logo: 'logo_modular.svg', website: 'https://www.modularcrypto.xyz/' },
+    { name: 'Ipê City', logo: 'logo_ipe.png', website: 'https://ipe.city/' },
     { name: 'CaptuAI', logo: 'logo_captuai.png', website: 'https://www.capituai.cc/en' },
     { name: 'Blockful', logo: 'logo_blockful.png', website: 'https://blockful.io/' },
     { name: 'InfinityBase', logo: 'logo_infinity.png', website: 'https://www.infinitybase.com/' },
-    { name: 'Modular Crypto', logo: 'logo_modular.svg', website: 'https://www.modularcrypto.xyz/' },
-    { name: 'Ipê City', logo: 'logo_ipe.png', website: 'https://ipe.city/' },
-    { name: 'Ethereum Brasil', logo: 'logo_ethbr.png', website: 'https://www.ethereumbrasil.com/' },
+    { name: 'Dinamo', logo: 'logo_dinamo.png', website: 'https://dinamonetworks.com/' },
   ];
 
   return (
