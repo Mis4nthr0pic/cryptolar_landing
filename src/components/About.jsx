@@ -118,9 +118,14 @@ const About = ({ id }) => {
                 href="https://lu.ma/cryptolar" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="bg-gradient-to-r from-yellow-400 to-orange-500 hover:from-yellow-500 hover:to-orange-600 text-black font-bold py-2 px-3 md:px-4 rounded-lg transition-all duration-300 transform hover:scale-105 text-xs md:text-sm shadow-lg"
+                className="relative bg-gradient-to-r from-yellow-400 via-orange-400 to-yellow-500 hover:from-yellow-300 hover:via-orange-300 hover:to-yellow-400 text-black font-bold py-2 px-3 md:px-4 rounded-lg transition-all duration-300 transform hover:scale-110 text-xs md:text-sm shadow-2xl animate-pulse overflow-hidden group"
+                style={{
+                  boxShadow: '0 0 20px rgba(251, 191, 36, 0.6), 0 0 40px rgba(251, 191, 36, 0.4), 0 0 60px rgba(251, 191, 36, 0.2)'
+                }}
               >
-                📅 {t('about.buttons.registerOnLuma')}
+                {/* Shining effect overlay */}
+                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700 ease-in-out"></div>
+                <span className="relative z-10">📅 {t('about.buttons.registerOnLuma')}</span>
               </a>
             </div>
           </div>
