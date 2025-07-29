@@ -163,7 +163,7 @@ const Location = ({ id }) => {
                    }}>
                 <img 
                   src="/images/founderhaus_1.avif" 
-                  alt="FounderHaus Interior" 
+                  alt="Founder Haus Interior" 
                   className="w-full h-48 object-cover rounded-lg shadow-xl"
                 />
               </div>
@@ -173,7 +173,7 @@ const Location = ({ id }) => {
                    }}>
                 <img 
                   src="/images/founderhaus_2.avif" 
-                  alt="FounderHaus Space" 
+                  alt="Founder Haus Space" 
                   className="w-full h-48 object-cover rounded-lg shadow-xl"
                 />
               </div>
@@ -239,7 +239,7 @@ const Location = ({ id }) => {
             allowFullScreen=""
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
-            title="FounderHaus Location"
+            title="Founder Haus Location"
           ></iframe>
         </div>
       </div>

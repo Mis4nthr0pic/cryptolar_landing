@@ -3,8 +3,8 @@ import { useTranslation } from 'react-i18next';
 import SectionNavigator from './SectionNavigator';
 
 const CompanyCard = ({ company, delay }) => {
-  const largerLogos = ['ChainLink', 'Solana', 'MOIC', 'InfinityBase', 'Modular Crypto', 'NearX', 'Zokyo', 'Brand Nexus AI', 'OpenSense', 'Stellar', 'Blockful'];
-  const isLarger = largerLogos.includes(company.name);
+  const smallerLogos = ['OpenSense'];
+  const isSmaller = smallerLogos.includes(company.name);
   
   return (
     <a 
@@ -22,9 +22,9 @@ const CompanyCard = ({ company, delay }) => {
         <img 
           src={`/images/${company.logo}`}
           alt={`${company.name} logo`}
-          className={`object-contain transition-all duration-500 group-hover:brightness-110 group-hover:contrast-105 group-hover:saturate-105 ${isLarger ? 'w-full h-full' : 'max-w-[80%] max-h-[80%]'}`}
+          className={`object-contain transition-all duration-500 group-hover:brightness-110 group-hover:contrast-105 group-hover:saturate-105 ${isSmaller ? 'max-w-[60%] max-h-[60%]' : 'max-w-[80%] max-h-[80%]'}`}
           style={{ 
-            filter: 'drop-shadow(0 1px 3px rgba(0,0,0,0.2))',
+            filter: 'grayscale(100%) brightness(0) invert(1) drop-shadow(0 1px 3px rgba(0,0,0,0.2))',
             mixBlendMode: 'normal'
           }}
         />
@@ -45,22 +45,21 @@ const InvitedCompanies = ({ id }) => {
   const { t } = useTranslation();
 
   const companies = [
-    { name: 'Polygon', logo: 'logo_polygon.png', website: 'https://polygon.technology/' },
+    { name: 'Polygon', logo: 'logo_polygon.svg', website: 'https://polygon.technology/' },
+    { name: 'Solana', logo: 'logo_solana.svg', website: 'https://solana.com/' },
     { name: 'OpenSense', logo: 'logo_opensense.png', website: 'https://x.com/opensensepw' },
-    { name: 'CaptuAI', logo: 'logo_captuai.png', website: 'https://www.capituai.cc/en' },
-    { name: 'Stellar', logo: 'logo_stellar.png', website: 'https://stellar.org/' },
-    { name: 'NearX', logo: 'logo_nearx.webp', website: 'https://nearx.com.br/' },
     { name: 'Zokyo', logo: 'logo_zokyo.png', website: 'https://zokyo.io/' },
-    { name: 'Brand Nexus AI', logo: 'logo_brand.webp', website: 'https://brandnexus.ai/' },
-    { name: 'Banco Inter', logo: 'logo_inter.png', website: 'https://inter.co/' },
-    { name: 'Blockful', logo: 'logo_blockful.webp', website: 'https://blockful.io/' },
+    { name: 'MOIC', logo: 'logo_moic.avif', website: 'https://www.moicdigital.com/' },
+    { name: 'NearX', logo: 'logo_nearx.webp', website: 'https://nearx.com.br/' },
+    { name: 'ChainLink', logo: 'logo_chainlink.svg', website: 'https://chain.link/' },
+    { name: 'Stellar', logo: 'logo_stellar.png', website: 'https://stellar.org/' },
+    { name: 'Dinamo', logo: 'logo_dinamo.png', website: 'https://dinamonetworks.com/' },
+    { name: 'CaptuAI', logo: 'logo_captuai.png', website: 'https://www.capituai.cc/en' },
+    { name: 'Blockful', logo: 'logo_blockful.png', website: 'https://blockful.io/' },
     { name: 'InfinityBase', logo: 'logo_infinity.png', website: 'https://www.infinitybase.com/' },
     { name: 'Modular Crypto', logo: 'logo_modular.svg', website: 'https://www.modularcrypto.xyz/' },
-    { name: 'Ipê City', logo: 'logo_ipe.avif', website: 'https://ipe.city/' },
-    { name: 'ChainLink', logo: 'logo_chainlink.svg', website: 'https://chain.link/' },
-    { name: 'Solana', logo: 'logo_solana.svg', website: 'https://solana.com/' },
-    { name: 'MOIC', logo: 'logo_moic.avif', website: 'https://www.moicdigital.com/' },
-    { name: 'HOC', logo: 'logo_hoc.svg', website: 'https://higherorderco.com/' },
+    { name: 'Ipê City', logo: 'logo_ipe.png', website: 'https://ipe.city/' },
+    { name: 'Ethereum Brasil', logo: 'logo_ethbr.png', website: 'https://www.ethereumbrasil.com/' },
   ];
 
   return (
