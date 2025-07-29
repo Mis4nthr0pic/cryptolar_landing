@@ -1,15 +1,19 @@
 # CryptoLar 2025 Website
 
-A modern, responsive website for the CryptoLar 2025 blockchain event in Florianópolis, Brazil. Built with React, featuring beautiful animations, internationalization, and glassmorphism design.
+A modern, responsive website for the CryptoLar 2025 blockchain conference and Starknet hackathon in Florianópolis, Brazil. Built with React, featuring beautiful animations, internationalization, and glassmorphism design.
 
 ## 🚀 Features
 
-- **Responsive Design**: Optimized for mobile, tablet, and desktop
-- **Multi-language Support**: Portuguese, English, and Spanish
-- **Interactive Animations**: Smooth transitions and 3D effects
-- **Company Showcase**: Interactive company logos with hover effects
-- **Event Information**: Comprehensive details about talks, hackathon, and location
-- **Modern UI**: Glassmorphism design with gradient backgrounds
+- **Responsive Design**: Optimized for mobile, tablet, and desktop with mobile-first approach
+- **Multi-language Support**: Portuguese, English, and Spanish with react-i18next
+- **Interactive Animations**: Smooth transitions, 3D effects, and floating elements
+- **Company Showcase**: Interactive invited companies with black/white filtered logos and hover effects
+- **Event Information**: Comprehensive details about Ethereum talks, Starknet hackathon, and venue
+- **Modern UI**: Glassmorphism design with gradient backgrounds and animated particles
+- **Social Integration**: Twitter/X and Telegram social media links
+- **SEO Optimized**: Open Graph protocol for social media link previews
+- **Analytics**: Google Analytics integration for tracking
+- **Registration**: Prominent Luma registration buttons with shine effects
 
 ## 🛠 Tech Stack
 
@@ -172,7 +176,19 @@ website/
      { name: 'Company Name', logo: 'logo_company.png', website: 'https://company.com' },
    ];
    ```
-3. **For larger logos**, add company name to `largerLogos` array
+3. **For logo sizing adjustments**:
+   - Add to `smallerLogos` array for 60% size (e.g., OpenSense)
+   - Add to `biggerLogos` array for 95% size (e.g., Ethereum Brasil)
+   - Default size is 80%
+
+### Current Invited Companies
+
+The website showcases the following companies in order:
+- Polygon, Solana, OpenSense (smaller), Zokyo, MOIC, NearX, ChainLink
+- Stellar, Ethereum Brasil (bigger), Modular Crypto, Ipê City, CaptuAI
+- Blockful, InfinityBase, Dinamo
+
+All logos are styled with black/white filters for consistency.
 
 ### Adding Translations
 
@@ -247,12 +263,43 @@ This project is proprietary and confidential. All rights reserved.
 4. Test thoroughly
 5. Submit a pull request
 
+## 🎯 Event Details
+
+### CryptoLar 2025 Conference
+- **Date**: August 16, 2025
+- **Location**: Founder Haus, Jurerê Internacional, Florianópolis, SC
+- **Format**: Ethereum Conference with industry talks
+- **Topics**: DeFi, DAOs, Security, Layer 2s, AI, Oracles, Network Societies
+
+### Starknet Hackathon
+- **Duration**: 48 hours 
+- **Prize Pool**: R$ 15,000 total
+- **Team Size**: 2-4 people
+- **Focus**: Cairo development and ZK-Rollups
+- **Evaluators**: Alexandre Melo (@mi4nthr0pic), Felipe Novaes (@FelipeNovaesFR1)
+
+### Main Sponsors
+- **Ethereum Latam**: Primary sponsor
+- **Starknet**: Hackathon sponsor
+- **Supporting**: Stellar, Zokyo, NearX, OpenSense, Ethereum Foundation
+
+## 🌐 Live Website
+
+- **Production**: https://cryptolar.com.br/
+- **Development**: https://cryptolar-landing.vercel.app/
+
+## 📱 Social Media
+
+- **Twitter**: [@CryptoLarBrasil](https://x.com/CryptoLarBrasil)
+- **OpenSense**: [@opensensepw](https://x.com/opensensepw)
+- **Telegram**: [cryptolarbrasil](https://t.me/cryptolarbrasil)
+
 ## 📞 Support
 
 For support or questions:
-- Email: [contact@cryptolar.com]
-- Website: [https://cryptolar.com]
+- Registration: [Luma Event Page](https://lu.ma/cryptolar)
+- Website: [https://cryptolar.com.br](https://cryptolar.com.br)
 
 ---
 
-**Made with ❤️ for the CryptoLar 2025 community**
+**Made with ❤️ for the CryptoLar 2025 blockchain community**
