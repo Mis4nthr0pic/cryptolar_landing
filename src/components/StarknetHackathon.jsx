@@ -114,9 +114,6 @@ const StarknetHackathon = ({ id }) => {
                   >
                     {t('hackathon.buttons.about')}
                   </a>
-                  <button className="block w-full bg-blue-600/20 hover:bg-blue-600/30 text-white font-bold py-3 px-4 rounded-lg transition-all duration-300 border border-white/30 hover:border-white/50 font-body text-sm">
-                    {t('hackathon.buttons.signup')}
-                  </button>
                 </div>
               </div>
             </div>
