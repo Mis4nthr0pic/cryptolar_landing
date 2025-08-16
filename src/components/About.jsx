@@ -1,6 +1,7 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import SectionNavigator from './SectionNavigator';
+import QRCodeComponent from './QRCode';
 
 const About = ({ id }) => {
   const { t } = useTranslation()
@@ -127,6 +128,31 @@ const About = ({ id }) => {
                 <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700 ease-in-out"></div>
                 <span className="relative z-10">📅 {t('about.buttons.registerOnLuma')}</span>
               </a>
+            </div>
+          </div>
+
+          {/* Telegram Box */}
+          <div className="bg-gradient-to-br from-black/95 via-gray-900/90 to-black/95 backdrop-blur-xl rounded-2xl p-4 md:p-5 border border-white/30 shadow-2xl text-white relative overflow-hidden">
+            {/* Glossy overlay */}
+            <div className="absolute inset-0 bg-gradient-to-br from-white/10 via-transparent to-transparent rounded-2xl pointer-events-none"></div>
+            <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-blue-400 via-cyan-400 to-blue-400 rounded-t-2xl"></div>
+            <div className="relative z-10 flex flex-col items-center justify-center text-center">
+              <h3 className="text-base md:text-lg font-semibold mb-2 md:mb-3 text-white">
+                {t('about.telegram.title')}
+              </h3>
+              <div className="mb-3">
+                <QRCodeComponent text="https://t.me/cryptolarbrasil" size={80} className="mx-auto mb-2" />
+                <p className="text-xs text-gray-300 mb-2">{t('about.telegram.description')}</p>
+                <a 
+                  href="https://t.me/cryptolarbrasil" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-500 to-cyan-500 hover:from-blue-400 hover:to-cyan-400 text-white font-semibold py-2 px-3 rounded-lg transition-all duration-300 transform hover:scale-105 text-xs md:text-sm shadow-lg"
+                >
+                  <span>📱</span>
+                  <span>{t('about.telegram.join')}</span>
+                </a>
+              </div>
             </div>
           </div>
 

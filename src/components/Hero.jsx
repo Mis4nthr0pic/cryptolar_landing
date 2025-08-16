@@ -114,7 +114,7 @@ const Hero = ({ id }) => {
           {/* Down Arrow Navigation */}
           <SectionNavigator 
             currentSectionId="hero-section" 
-            nextSectionId="about-section" 
+            nextSectionId="alexandre-section" 
           />
         </div>
       </div>

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import LanguageSwitcher from './components/LanguageSwitcher';
 import Hero from './components/Hero';
+import Alexandre from './components/Alexandre';
 import About from './components/About';
 import StarknetHackathon from './components/StarknetHackathon';
 import Talks from './components/Talks';
@@ -41,6 +42,7 @@ function App() {
     <div className="font-body">
       <LanguageSwitcher />
       <Hero id="hero-section" />
+      <Alexandre id="alexandre-section" />
       <About id="about-section" />
       <Talks id="talks-section" />
       <Location id="location-section" />

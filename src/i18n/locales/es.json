@@ -1,7 +1,7 @@
 {
   "hero": {
       "date": "16 de agosto de 2025 — Florianópolis",
-      "tagline": "Donde Ethereum se siente como en casa.",
+      "tagline": "CryptoLar no es solo un evento. Es el comienzo de un movimiento.",
       "subtitle": "Un encuentro exclusivo de innovadores de blockchain con charlas de los principales expertos de Ethereum en el hermoso escenario de Florianópolis.",
       "sponsors": "Patrocinadores",
       "scroll": "Desplazar"
@@ -24,7 +24,31 @@
       "register": "Registrarse en el Evento",
       "learnMore": "Saber Más",
       "registerOnLuma": "REGISTRARSE EN LUMA"
+    },
+    "telegram": {
+      "title": "Comunidad",
+      "description": "Únete a nuestro grupo de Telegram",
+      "join": "Unirse al Grupo"
     }
+  },
+  "alexandre": {
+    "title": "Alexandre Melo",
+    "subtitle": "Organizador de CryptoLar 2025 y líder comunitario Web3",
+    "web3_start": "Inicio en Web3 (2020)",
+    "web3_start_desc": "Desarrollador con más de 15 años de experiencia, comencé mi viaje en Web3 en 2020.",
+    "education": "Formación",
+    "education_desc": "Estudié blockchain directamente con el Dr. Gavin Wood en la Universidad de Cambridge.",
+    "career": "Carrera Internacional",
+    "career_desc": "Dejé un puesto de ingeniero senior en Ámsterdam/Europa para dedicarme exclusivamente al ecosistema Web3 en Brasil.",
+    "roles": "Actuación",
+    "roles_desc": "Actué como desarrollador, investigador de seguridad y hoy soy líder comunitario.",
+    "contributions": "Contribuciones",
+    "contributions_desc": "Participé y contribuí a varios proyectos en el espacio, siempre con enfoque en seguridad, educación y comunidad.",
+    "community": "Comunidad",
+    "community_desc": "Fundador de OpenSense, actualmente la mayor comunidad abierta de seguridad Web3 del mundo, donde ya he entrevistado a más de 70 de los mejores devs y auditores del mercado.",
+    "speaking": "Orador",
+    "speaking_desc": "Ya he hablado en eventos como ETH Latam, H2HC, Ipê City y FloripaWeb3.",
+    "connect": "Conectar"
   },
   "hackathon": {
     "title": "Starknet Hackathon",
@@ -104,20 +128,20 @@
         "description": "Aprende sobre vulnerabilidades, ataques históricos y las mejores prácticas para construir sistemas seguros."
       },
       "l2s": {
-        "title": "Layer2s y Sidechains",
-        "description": "Conecta diferentes blockchains y explora las soluciones de interoperabilidad que unen el ecosistema multi-cadena."
+        "title": "Educación en Blockchain",
+        "description": "Aprende los fundamentos esenciales de la tecnología blockchain, desde conceptos básicos hasta aplicaciones avanzadas, con un enfoque práctico y educativo."
       },
       "ai": {
         "title": "IA",
         "description": "Descubre cómo la inteligencia artificial se está integrando con blockchain para crear nuevas posibilidades."
       },
       "oracles": {
-        "title": "Oráculos",
-        "description": "Explora cómo los oráculos blockchain conectan datos on-chain y off-chain, permitiendo que los contratos inteligentes interactúen con información del mundo real."
+        "title": "Onboarding Web2",
+        "description": "Estrategias efectivas para hacer la transición de usuarios y empresas tradicionales al mundo Web3, construyendo puentes entre tecnologías familiares e innovación blockchain."
       },
       "network_societies": {
-        "title": "Sociedades en Red",
-        "description": "Entiende cómo las redes descentralizadas están remodelando estructuras sociales y creando nuevas formas de gobernanza digital y organización comunitaria."
+        "title": "Claves Privadas",
+        "description": "Sumérgete en el corazón de la seguridad blockchain: cómo funcionan las claves privadas, mejores prácticas de almacenamiento y la importancia de la autocustodia para proteger tus activos digitales."
       },
       "and_more": {
         "title": "Y Mucho Más...",

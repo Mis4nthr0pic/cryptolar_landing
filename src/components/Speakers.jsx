@@ -53,7 +53,6 @@ const InvitedCompanies = ({ id }) => {
     { name: 'Zokyo', logo: 'logo_zokyo.png', website: 'https://zokyo.io/' },
     { name: 'MOIC', logo: 'logo_moic.avif', website: 'https://www.moicdigital.com/' },
     { name: 'NearX', logo: 'logo_nearx.webp', website: 'https://nearx.com.br/' },
-    { name: 'ChainLink', logo: 'logo_chainlink.svg', website: 'https://chain.link/' },
     { name: 'Stellar', logo: 'logo_stellar.png', website: 'https://stellar.org/' },
     { name: 'Ethereum Brasil', logo: 'logo_ethbr.png', website: 'https://www.ethereumbrasil.com/' },
     { name: 'Modular Crypto', logo: 'logo_modular.svg', website: 'https://www.modularcrypto.xyz/' },
