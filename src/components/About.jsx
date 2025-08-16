@@ -36,12 +36,12 @@ const About = ({ id }) => {
       <div className="absolute inset-2 md:inset-8 flex flex-col justify-start md:justify-center items-center z-20 pt-4 md:pt-0 overflow-y-auto max-h-screen">
         
         {/* Main Title Box */}
-        <div className="bg-gradient-to-br from-black/95 via-gray-900/90 to-black/95 backdrop-blur-xl rounded-2xl p-4 md:p-6 border border-white/30 shadow-2xl text-center max-w-2xl w-full mb-4 md:mb-6 relative overflow-hidden">
+        <div className="bg-gradient-to-br from-black/95 via-gray-900/90 to-black/95 backdrop-blur-xl rounded-2xl p-6 md:p-8 border border-white/30 shadow-2xl text-center w-full max-w-4xl mb-4 md:mb-6 relative overflow-visible min-h-[120px] md:min-h-[140px]">
           {/* Glossy overlay */}
           <div className="absolute inset-0 bg-gradient-to-br from-white/10 via-transparent to-transparent rounded-2xl pointer-events-none"></div>
           <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-yellow-400 via-orange-400 to-yellow-400 rounded-t-2xl"></div>
-          <div className="relative z-10">
-            <h2 className="text-xl md:text-3xl font-display font-bold mb-2 bg-gradient-to-r from-yellow-300 via-orange-300 to-yellow-400 bg-clip-text text-transparent">
+          <div className="relative z-10 flex flex-col justify-center h-full">
+            <h2 className="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl font-display font-bold mb-3 bg-gradient-to-r from-yellow-300 via-orange-300 to-yellow-400 bg-clip-text text-transparent leading-relaxed break-words hyphens-auto px-4">
               {t('about.title')}
             </h2>
             <div className="text-cyan-200 font-semibold text-sm md:text-base">
@@ -132,17 +132,19 @@ const About = ({ id }) => {
           </div>
 
           {/* Telegram Box */}
-          <div className="bg-gradient-to-br from-black/95 via-gray-900/90 to-black/95 backdrop-blur-xl rounded-2xl p-4 md:p-5 border border-white/30 shadow-2xl text-white relative overflow-hidden">
+          <div className="bg-gradient-to-br from-black/95 via-gray-900/90 to-black/95 backdrop-blur-xl rounded-2xl p-4 md:p-5 border border-white/30 shadow-2xl text-white relative overflow-visible min-h-[200px] md:min-h-[220px]">
             {/* Glossy overlay */}
             <div className="absolute inset-0 bg-gradient-to-br from-white/10 via-transparent to-transparent rounded-2xl pointer-events-none"></div>
             <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-blue-400 via-cyan-400 to-blue-400 rounded-t-2xl"></div>
-            <div className="relative z-10 flex flex-col items-center justify-center text-center">
-              <h3 className="text-base md:text-lg font-semibold mb-2 md:mb-3 text-white">
+            <div className="relative z-10 flex flex-col items-center justify-start text-center h-full">
+              <h3 className="text-base md:text-lg font-semibold mb-3 text-white">
                 {t('about.telegram.title')}
               </h3>
-              <div className="mb-3">
-                <QRCodeComponent text="https://t.me/cryptolarbrasil" size={80} className="mx-auto mb-2" />
-                <p className="text-xs text-gray-300 mb-2">{t('about.telegram.description')}</p>
+              <div className="flex flex-col items-center space-y-2 flex-grow justify-center">
+                <div className="flex-shrink-0">
+                  <QRCodeComponent text="https://t.me/cryptolarbrasil" size={80} className="mx-auto" />
+                </div>
+                <p className="text-xs text-gray-300">{t('about.telegram.description')}</p>
                 <a 
                   href="https://t.me/cryptolarbrasil" 
                   target="_blank" 
