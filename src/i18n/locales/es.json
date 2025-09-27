@@ -162,6 +162,8 @@
   "submission": {
     "title": "Día de Envío",
     "subtitle": "Qué esperamos de tu equipo",
+    "deadlineTitle": "Fecha Límite de Envío",
+    "deadlineDate": "Sábado, 4 de Octubre",
     "deck": {
       "title": "Presentación (estilo PowerPoint)",
       "desc": "Diapositivas con problema, solución, diferenciales y próximos pasos."
@@ -226,6 +228,43 @@
       "title": "Comunidad",
       "description": "Únete a nuestro grupo de Telegram",
       "join": "Unirse al Grupo"
+    }
+  },
+  "judges": {
+    "title": "Jueces",
+    "subtitle": "Evaluadores del hackathon.",
+    "alexandre": {
+      "role": "Fundador de CryptoLar y OpenSense",
+      "org": "Investigador de seguridad Web3",
+      "bio": "Fundador de CryptoLar y OpenSense; investigador de seguridad Web3 y líder comunitario."
+    },
+    "felipe": {
+      "role": "Auditor e investigador de blockchain",
+      "bio": "Dev con 24+ años; lideró personas y proyectos. Agnóstico del lenguaje: usa la herramienta adecuada para cada desafío."
+    },
+    "ernesto": {
+      "role": ".NET | Blockchain | Web3 | IA",
+      "bio": "Desarrollador backend enfocado en .NET, blockchain, Web3 e IA; investigador de Starknet."
+    },
+    "ranulfo": {
+      "role": "Cofundador de Cambiatus & CofiBlocks",
+      "org": "Ph.D. y posdoctorado (UNICAMP)",
+      "bio": "Ph.D. y posdoctorado en Economía y Criptoactivos Ambientales para la Sostenibilidad en la UNICAMP (Brasil)."
+    },
+    "isaque": {
+      "role": "AI Engineer | Multi‑Agent Systems & LLMs",
+      "org": "CrewAI, LangChain, OpenAI API, AWS",
+      "bio": "Ingeniero de IA enfocado en sistemas multiagente y LLMs con CrewAI, LangChain y stack AWS/OpenAI."
+    },
+    "lorenzo": {
+      "role": "Team Lead @ MOIC Digital",
+      "org": "Ingeniería de Computación | Crypto | Web3",
+      "bio": "Líder de equipo en MOIC Digital; ingeniería de computación aplicada a cripto, blockchain y Web3."
+    },
+    "ion": {
+      "role": "Head of Research @ Blockful",
+      "org": "UX, seguridad y eficiencia en gobernanza digital",
+      "bio": "Head of Research en Blockful; enfoque en UX, seguridad y eficiencia de sistemas de gobernanza digital."
     }
   },
   "alexandre": {

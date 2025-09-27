@@ -76,6 +76,12 @@ const SubmissionDay = () => {
           <p className="text-blue-200">{t('submission.subtitle')}</p>
         </div>
 
+        {/* Deadline callout */}
+        <div className="mb-8 rounded-2xl border-2 border-red-500/60 bg-gradient-to-r from-red-600/20 via-orange-500/20 to-red-600/20 p-6 text-center shadow-[0_0_30px_rgba(239,68,68,0.35)]">
+          <div className="text-xs uppercase tracking-wider text-red-200 mb-2">{t('submission.deadlineTitle')}</div>
+          <div className="text-2xl md:text-4xl font-black text-red-300 drop-shadow">{t('submission.deadlineDate')}</div>
+        </div>
+
         <div className="grid lg:grid-cols-2 gap-6">
           {steps.map((s, i) => (
             <Step key={i} index={i + 1} icon={s.icon} title={s.title} desc={s.desc} />

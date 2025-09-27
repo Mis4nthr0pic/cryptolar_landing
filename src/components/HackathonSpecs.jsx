@@ -25,7 +25,7 @@ const HackathonSpecs = () => {
           <Stat label="Equipes" value="2–4 pessoas" />
           <Stat label="Local" value="MOIC DIGITAL" />
           <Stat label="Avaliação" value="Juízes listados abaixo" />
-          <Stat label="Data" value="27 de Setembro" />
+          <Stat label={"Prazo"} value="4 de Outubro (Sábado)" />
         </div>
       </div>
     </section>

@@ -1,11 +1,10 @@
 import React, { useRef, useState, useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 
 const judges = [
   {
+    id: 'alexandre',
     name: 'Alexandre Melo',
-    role: 'Fundador da CryptoLar e da OpenSense',
-    org: 'Pesquisador de Segurança Web3',
-    bio: 'Fundador da CryptoLar e da OpenSense; pesquisador de segurança Web3 e líder comunitário.',
     avatar: '/images/pfp_alexandre.jpeg',
     social: {
       linkedin: 'https://www.linkedin.com/in/alexoncrypto',
@@ -14,10 +13,8 @@ const judges = [
     }
   },
   {
+    id: 'felipe',
     name: 'Felipe Novaes',
-    role: 'Auditor e Pesquisador Blockchain',
-    org: '',
-    bio: 'Dev há 24+ anos; liderou pessoas e projetos. Agnóstico de linguagem: usa a ferramenta certa para cada desafio.',
     avatar: '/images/pfp_felipe.jpeg',
     social: {
       linkedin: 'https://www.linkedin.com/in/felipenovaesrocha/',
@@ -26,10 +23,8 @@ const judges = [
     }
   },
   {
+    id: 'ernesto',
     name: 'Ernesto De Oliveira',
-    role: 'Backend developer | .NET | Blockchain | Web3 | AI',
-    org: '',
-    bio: 'Backend developer com foco em .NET, Blockchain, Web3 e IA; pesquisador Starknet.',
     avatar: '/images/pfp_ernesto.jpeg',
     social: {
       linkedin: 'https://www.linkedin.com/in/ernesto-de-oliveira/',
@@ -38,10 +33,8 @@ const judges = [
     }
   },
   {
+    id: 'ranulfo',
     name: 'Ranulfo Paiva Sobrinho',
-    role: 'Cambiatus & CofiBlocks Co‑Founder',
-    org: 'Ph.D. e pós‑doutor (UNICAMP)',
-    bio: 'Ph.D. e pós‑doutorado em Economia e Criptoativos Ambientais para Sustentabilidade pela UNICAMP (Brasil).',
     avatar: '/images/pfp_ranulfo.jpeg',
     social: {
       linkedin: 'https://www.linkedin.com/in/ranulfosobrinho/',
@@ -50,10 +43,8 @@ const judges = [
     }
   },
   {
+    id: 'isaque',
     name: 'Isaque Coelho',
-    role: 'AI Engineer | Multi‑Agent Systems & LLMs | CrewAI, LangChain, OpenAI API, AWS',
-    org: '',
-    bio: 'Engenheiro de IA com foco em sistemas multiagentes e LLMs, usando CrewAI, LangChain e stack AWS/OpenAI.',
     avatar: '/images/pfp_coelho.jpeg',
     social: {
       linkedin: 'https://www.linkedin.com/in/coelhoxyz/',
@@ -62,10 +53,8 @@ const judges = [
     }
   },
   {
+    id: 'lorenzo',
     name: 'Lorenzo Baumgratz',
-    role: 'Team Lead @ MOIC Digital | Computer Engineering | Crypto | Blockchain | Web3',
-    org: '',
-    bio: 'Líder de time na MOIC Digital; engenharia de computação aplicada a cripto, blockchain e Web3.',
     avatar: '/images/pfp_lorenzo.png',
     social: {
       linkedin: 'https://www.linkedin.com/in/lorenzo-baumgratz/',
@@ -74,10 +63,8 @@ const judges = [
     }
   },
   {
+    id: 'ion',
     name: 'Ion Neto',
-    role: 'Head of Research @ Blockful | UX, security and efficiency of digital governance systems',
-    org: '',
-    bio: 'Head of Research na Blockful; foco em UX, segurança e eficiência de sistemas de governança digital.',
     avatar: '/images/pfp_zeugh.jpg',
     social: {
       linkedin: 'https://www.linkedin.com/in/ionneto/',
@@ -124,29 +111,34 @@ const Pill = ({ href, label, kind }) => {
 };
 
 const HackathonJudges = () => {
+  const { t } = useTranslation();
   return (
     <section id="judges" className="py-16 bg-gray-950 text-white">
       <div className="max-w-7xl mx-auto px-4">
         <div className="mb-8 flex items-end justify-between">
           <div>
-            <h2 className="text-3xl md:text-4xl font-display font-bold">Juízes</h2>
-            <p className="text-blue-200">Avaliadores do Hackathon.</p>
+            <h2 className="text-3xl md:text-4xl font-display font-bold">{t('judges.title', 'Juízes')}</h2>
+            <p className="text-blue-200">{t('judges.subtitle', 'Avaliadores do Hackathon.')}</p>
           </div>
         </div>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 items-stretch">
-          {judges.map((j, idx) => (
+          {judges.map((j, idx) => {
+            const role = t(`judges.${j.id}.role`);
+            const org = t(`judges.${j.id}.org`, { defaultValue: '' });
+            const bio = t(`judges.${j.id}.bio`);
+            return (
             <TiltCard key={j.name} delay={idx * 0.05}>
               <div className="relative h-full">
                 <div className="fire-glow" aria-hidden="true" />
                 <div className="relative rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur-sm h-full flex flex-col min-h-[260px]">
                   <div className="flex items-center gap-4">
-                <img src={j.avatar} alt={j.name} loading="lazy" className="w-16 h-16 rounded-full object-cover" />
+                    <img src={j.avatar} alt={j.name} loading="lazy" className="w-16 h-16 rounded-full object-cover" />
                     <div>
                       <div className="text-lg font-semibold">{j.name}</div>
-                      <div className="text-sm text-blue-200">{j.role}{j.org ? ` • ${j.org}` : ''}</div>
+                      <div className="text-sm text-blue-200">{role}{org ? ` • ${org}` : ''}</div>
                     </div>
                   </div>
-                  <p className="text-sm text-blue-100 mt-3 flex-grow">{j.bio}</p>
+                  <p className="text-sm text-blue-100 mt-3 flex-grow">{bio}</p>
                   <div className="flex gap-2 mt-4" aria-label={`${j.name} social links`}>
                     {j.social.linkedin && (
                       <Pill href={j.social.linkedin} label={`${j.name} LinkedIn`} kind="linkedin" />
@@ -161,7 +153,8 @@ const HackathonJudges = () => {
                 </div>
               </div>
             </TiltCard>
-          ))}
+            );
+          })}
         </div>
       </div>
     </section>

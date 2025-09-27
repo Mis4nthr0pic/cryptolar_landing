@@ -162,6 +162,8 @@
   "submission": {
     "title": "Submission Day",
     "subtitle": "What we expect from your team",
+    "deadlineTitle": "Submission Deadline",
+    "deadlineDate": "Saturday, October 4",
     "deck": {
       "title": "Presentation (PowerPoint style)",
       "desc": "Slides covering problem, solution, differentiators, and next steps."
@@ -226,6 +228,43 @@
       "title": "Community",
       "description": "Join our Telegram group",
       "join": "Join Group"
+    }
+  },
+  "judges": {
+    "title": "Judges",
+    "subtitle": "Hackathon evaluators.",
+    "alexandre": {
+      "role": "Founder of CryptoLar and OpenSense",
+      "org": "Web3 Security Researcher",
+      "bio": "Founder of CryptoLar and OpenSense; Web3 security researcher and community leader."
+    },
+    "felipe": {
+      "role": "Blockchain Auditor and Researcher",
+      "bio": "Dev for 24+ years; led people and projects. Language‑agnostic: picks the right tool for the job."
+    },
+    "ernesto": {
+      "role": ".NET | Blockchain | Web3 | AI",
+      "bio": "Backend developer focused on .NET, blockchain, Web3 and AI; Starknet researcher."
+    },
+    "ranulfo": {
+      "role": "Cambiatus & CofiBlocks Co‑Founder",
+      "org": "Ph.D. and postdoctoral (UNICAMP)",
+      "bio": "Ph.D. and postdoctoral in Economics and Environmental Cryptoassets for Sustainability at UNICAMP (Brazil)."
+    },
+    "isaque": {
+      "role": "AI Engineer | Multi‑Agent Systems & LLMs",
+      "org": "CrewAI, LangChain, OpenAI API, AWS",
+      "bio": "AI engineer focused on multi‑agent systems and LLMs with CrewAI, LangChain and AWS/OpenAI stack."
+    },
+    "lorenzo": {
+      "role": "Team Lead @ MOIC Digital",
+      "org": "Computer Engineering | Crypto | Web3",
+      "bio": "Team lead at MOIC Digital; computer engineering applied to crypto, blockchain and Web3."
+    },
+    "ion": {
+      "role": "Head of Research @ Blockful",
+      "org": "UX, security and efficiency in digital governance",
+      "bio": "Head of Research at Blockful; focus on UX, security and efficiency of digital governance systems."
     }
   },
   "alexandre": {
