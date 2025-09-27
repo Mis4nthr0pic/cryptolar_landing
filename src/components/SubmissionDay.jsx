@@ -77,9 +77,21 @@ const SubmissionDay = () => {
         </div>
 
         {/* Deadline callout */}
-        <div className="mb-8 rounded-2xl border-2 border-red-500/60 bg-gradient-to-r from-red-600/20 via-orange-500/20 to-red-600/20 p-6 text-center shadow-[0_0_30px_rgba(239,68,68,0.35)]">
-          <div className="text-xs uppercase tracking-wider text-red-200 mb-2">{t('submission.deadlineTitle')}</div>
-          <div className="text-2xl md:text-4xl font-black text-red-300 drop-shadow">{t('submission.deadlineDate')}</div>
+        <div className="deadline-wrap mb-10">
+          <div className="deadline-glow" aria-hidden></div>
+          <div className="deadline-card">
+            <div className="chip">
+              <span className="inline-flex items-center gap-2 text-[10px] md:text-xs tracking-wider uppercase text-yellow-200">
+                <svg viewBox="0 0 24 24" fill="currentColor" className="w-3.5 h-3.5 md:w-4 md:h-4" aria-hidden>
+                  <path d="M7 2h2v2h6V2h2v2h3v18H4V4h3V2zm13 6H4v12h16V8z"/>
+                </svg>
+                {t('submission.deadlineTitle')}
+              </span>
+            </div>
+            <div className="deadline-date gradient-text">
+              {t('submission.deadlineDate')}
+            </div>
+          </div>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-6">

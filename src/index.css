@@ -1072,6 +1072,33 @@ html {
   align-items: center;
   justify-content: center;
 }
+
+/* Deadline styles */
+.deadline-wrap { position: relative; }
+.deadline-glow {
+  position: absolute;
+  inset: -12px;
+  border-radius: 18px;
+  background: radial-gradient(600px 140px at 50% 0%, rgba(250, 204, 21, 0.18), transparent 60%),
+              radial-gradient(500px 160px at 50% 100%, rgba(192, 132, 252, 0.15), transparent 60%);
+  filter: blur(18px);
+  pointer-events: none;
+}
+.deadline-card {
+  position: relative;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: linear-gradient(180deg, rgba(255,255,255,0.05), rgba(255,255,255,0.02));
+  backdrop-filter: blur(6px);
+  padding: 18px 20px;
+  text-align: center;
+}
+.deadline-card .chip { margin-bottom: 6px; }
+.deadline-date {
+  font-weight: 800;
+  font-size: clamp(1.5rem, 3.2vw, 2.5rem);
+  text-shadow: 0 0 18px rgba(147, 197, 253, 0.25);
+}
 .gold-prize-glow {
   background: linear-gradient(135deg, #ffd700, #f59e0b, #ffed4a);
   -webkit-background-clip: text;
