@@ -1,11 +1,21 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
+import { site } from '../config/site';
 
 const Navbar = () => {
   const { t } = useTranslation();
 
   const navItems = [
     { name: t('navbar.home'), id: 'hero-section' },
+    // Hackathon-first anchors
+    { name: 'Prêmios', id: 'prizes' },
+    { name: 'Especificações', id: 'specs' },
+    { name: 'Juízes', id: 'judges' },
+    { name: 'Patrocinadores', id: 'sponsors' },
+    { name: 'Recursos', id: 'resources' },
+    { name: 'Regras', id: 'rules' },
+    { name: 'Submissão', id: 'submit' },
+    // Existing anchors to keep routing/structure
     { name: t('navbar.about'), id: 'about-section' },
     { name: t('navbar.tracks'), id: 'talks-section' },
     { name: t('navbar.companies'), id: 'companies-section' },
@@ -21,7 +31,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="fixed top-0 left-0 right-0 bg-gray-900 bg-opacity-90 backdrop-blur-md z-50 shadow-lg">
+    <nav className="fixed top-0 left-0 right-0 bg-gray-900 bg-opacity-90 backdrop-blur-md z-50 shadow-lg" aria-label="Main Navigation">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           <div className="flex-shrink-0 flex items-center">
@@ -38,7 +48,19 @@ const Navbar = () => {
               </a>
             ))}
           </div>
-          {/* Mobile menu button - omitted for brevity, can be added later */}
+          {/* CTA buttons (registration removed) */}
+          <div className="hidden md:flex items-center gap-3">
+            <a
+              href={site.telegramUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 bg-blue-600 text-white font-semibold py-2 px-3 rounded-lg hover:bg-blue-500 transition-colors"
+              aria-label="Entrar no Telegram"
+            >
+              💬 <span className="hidden lg:inline">Entrar no Telegram</span>
+            </a>
+          </div>
+          {/* Mobile menu button - omitted for brevity */}
         </div>
       </div>
     </nav>

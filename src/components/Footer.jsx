@@ -19,27 +19,8 @@ const Footer = () => {
             </p>
           </div>
           
-          {/* Center: Registration Button */}
-          <div className="flex justify-center">
-            <a 
-              href="https://lu.ma/cryptolar" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="relative inline-flex items-center gap-2 bg-gradient-to-r from-yellow-400 via-orange-400 to-yellow-500 hover:from-yellow-300 hover:via-orange-300 hover:to-yellow-400 text-black font-bold py-3 px-6 rounded-xl transition-all duration-300 hover:scale-110 text-sm shadow-2xl animate-pulse overflow-hidden group"
-              style={{
-                boxShadow: '0 0 25px rgba(251, 191, 36, 0.6), 0 0 50px rgba(251, 191, 36, 0.4), 0 0 75px rgba(251, 191, 36, 0.3)'
-              }}
-            >
-              {/* Shining effect overlay */}
-              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700 ease-in-out"></div>
-              
-              {/* Content */}
-              <div className="relative z-10 flex items-center gap-2">
-                <span>📅</span>
-                {t('about.buttons.registerOnLuma')}
-              </div>
-            </a>
-          </div>
+          {/* Center: (registration button removed) */}
+          <div className="flex justify-center" />
           
           {/* Right: Social Links */}
           <div className="flex justify-center md:justify-end items-center gap-4">

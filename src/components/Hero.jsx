@@ -1,6 +1,7 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import SectionNavigator from './SectionNavigator';
+import { site } from '../config/site';
 
 const Hero = ({ id }) => {
   const { t } = useTranslation()
@@ -58,18 +59,37 @@ const Hero = ({ id }) => {
             className="logo-container mx-auto animate-[logoFadeIn_1.5s_ease-out_0.5s_both] max-w-[250px] md:max-w-sm lg:max-w-md relative z-20 drop-shadow-lg"
           />
         </div>
-        
-        <p className="text-base md:text-xl lg:text-2xl mb-2 md:mb-4 text-white font-body font-medium">
-          {t('hero.date')}
+        <h1 className="text-2xl md:text-4xl lg:text-5xl font-display font-bold mb-3 md:mb-4 text-white">
+          {t('hero.title')}
+        </h1>
+        <p className="text-xs md:text-base lg:text-lg text-white/90 leading-relaxed font-body mb-4 md:mb-6">
+          {t('hero.datetimeVenue')}
         </p>
-        
-        <h2 className="text-lg md:text-2xl lg:text-3xl font-display font-semibold mb-2 md:mb-4 text-white">
-          {t('hero.tagline')}
-        </h2>
-        
-        <p className="text-sm md:text-lg lg:text-xl text-white leading-relaxed font-body font-light mb-3 md:mb-6">
-          {t('hero.subtitle')}
+        <p className="text-sm md:text-lg lg:text-xl text-white/90 leading-relaxed font-body mb-4 md:mb-6">
+          {t('hero.hackathonBlurb')}
         </p>
+
+        {/* CTAs */}
+        <div className="flex flex-wrap items-center justify-center w-full gap-3 md:gap-4 mb-4 md:mb-8">
+          <a
+            href={site.telegramUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 bg-blue-600 text-white font-semibold py-3 px-5 rounded-xl hover:bg-blue-500 transition-colors shadow-lg"
+            aria-label="Entrar no Telegram"
+          >
+            💬 Entrar no Telegram
+          </a>
+          <a
+            href={site.twitterUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 bg-gray-800 text-white font-semibold py-3 px-5 rounded-xl hover:bg-gray-700 transition-colors shadow-lg"
+            aria-label="Abrir X (Twitter) do CryptoLar"
+          >
+            𝕏 Seguir no X
+          </a>
+        </div>
         
         {/* Sponsors in Hero */}
         <div className="mt-2 md:mt-6">
@@ -78,32 +98,16 @@ const Hero = ({ id }) => {
           </p>
           
           <div className="flex flex-col items-center gap-2 md:gap-4">
-            {/* First Row - Main Sponsors */}
+            {/* Main Sponsors */}
             <div className="flex items-center justify-center gap-4 md:gap-8">
-              <a href="https://ethereumlatam.org" target="_blank" rel="noopener noreferrer" className="sponsor-link">
-                <img src="/images/sponsor_ethereum.svg" alt="Ethereum Latam" className="h-12 md:h-20 lg:h-24 w-auto hover:scale-105 transition-transform duration-300" />
-              </a>
               <a href="https://starknet.io" target="_blank" rel="noopener noreferrer" className="sponsor-link">
-                <img src="/images/sponsor_starknet.png" alt="Starknet" className="h-7 md:h-11 lg:h-14 w-auto hover:scale-105 transition-transform duration-300" />
+                <img src="/images/sponsor_starknet.png" alt="Starknet" loading="lazy" className="h-7 md:h-11 lg:h-14 w-auto hover:scale-105 transition-transform duration-300" />
               </a>
-            </div>
-            
-            {/* Second Row - Supporting Sponsors */}
-            <div className="flex flex-wrap justify-center items-center gap-2 md:gap-5">
-              <a href="https://stellar.org" target="_blank" rel="noopener noreferrer" className="sponsor-link">
-                <img src="/images/logo_stellar.png" alt="Stellar" className="h-8 md:h-12 lg:h-14 w-auto hover:scale-105 transition-transform duration-300" />
+              <a href="https://www.codespect.net/" target="_blank" rel="noopener noreferrer" className="sponsor-link">
+                <img src="https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=2,quality=75,width=800,height=214.28571428571428/editor-images/dh/d91bbbed-4049-48ce-9354-3bc0d5ab0cb8.png" alt="Codespect" loading="lazy" className="h-7 md:h-11 lg:h-14 w-auto hover:scale-105 transition-transform duration-300" />
               </a>
-              <a href="https://zokyo.io" target="_blank" rel="noopener noreferrer" className="sponsor-link">
-                <img src="/images/sponsor_zokyo.png" alt="Zokyo" className="h-8 md:h-12 lg:h-14 w-auto hover:scale-105 transition-transform duration-300" />
-              </a>
-              <a href="https://nearx.com.br/" target="_blank" rel="noopener noreferrer" className="sponsor-link">
-                <img src="/images/sponsor_nearx.webp" alt="NearX" className="h-4 md:h-6 lg:h-8 w-auto hover:scale-105 transition-transform duration-300" />
-              </a>
-              <a href="https://x.com/opensensepw" target="_blank" rel="noopener noreferrer" className="sponsor-link">
-                <img src="/images/sponsor_opensense.png" alt="OpenSense" className="h-6 md:h-10 lg:h-12 w-auto hover:scale-105 transition-transform duration-300" />
-              </a>
-              <a href="https://ethereum.foundation" target="_blank" rel="noopener noreferrer" className="sponsor-link">
-                <img src="/images/sponsor_ethereum_foundation.png" alt="Ethereum Foundation" className="h-6 md:h-10 lg:h-12 w-auto hover:scale-105 transition-transform duration-300" />
+              <a href="https://www.moicdigital.com/" target="_blank" rel="noopener noreferrer" className="sponsor-link">
+                <img src="https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=2,quality=75,width=800,height=214.28571428571428/editor-images/zq/7af9a48e-02a9-4b17-a95a-2af4884580e9.png" alt="Moic Digital" loading="lazy" className="h-7 md:h-11 lg:h-14 w-auto hover:scale-105 transition-transform duration-300" />
               </a>
             </div>
           </div>
@@ -114,7 +118,7 @@ const Hero = ({ id }) => {
           {/* Down Arrow Navigation */}
           <SectionNavigator 
             currentSectionId="hero-section" 
-            nextSectionId="alexandre-section" 
+            nextSectionId="prizes" 
           />
         </div>
       </div>

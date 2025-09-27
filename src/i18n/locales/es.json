@@ -3,8 +3,204 @@
       "date": "16 de agosto de 2025 — Florianópolis",
       "tagline": "CryptoLar no es solo un evento. Es el comienzo de un movimiento.",
       "subtitle": "Un encuentro exclusivo de innovadores de blockchain con charlas de los principales expertos de Ethereum en el hermoso escenario de Florianópolis.",
+      "title": "CryptoLar × Starknet: El Hackathon — Acto I",
+      "datetimeVenue": "27 de Septiembre, MOIC DIGITAL",
+      "hackathonBlurb": "Un sprint colaborativo para prototipar soluciones en Ethereum/Starknet. Trae un problema real, trabaja con mentores y entrega un MVP funcional al final del día.",
       "sponsors": "Patrocinadores",
       "scroll": "Desplazar"
+  },
+  "rules_extra": {
+    "weights": {
+      "title": "Pesos de Evaluación",
+      "items": [
+        "Innovación — 25%",
+        "Ejecución técnica — 25%",
+        "Utilidad/Impacto — 25%",
+        "UX — 15%",
+        "Pitch — 10%"
+      ]
+    },
+    "coc": {
+      "title": "Código de Conducta",
+      "desc": "Esperamos respeto mutuo y un ambiente seguro. Lee nuestro Código de Conducta:",
+      "link": "Abrir CoC",
+      "url": "#{cocUrl}"
+    }
+  },
+  "rules": {
+    "title": "Reglas",
+    "weights": {
+      "title": "Pesos de Evaluación",
+      "items": [
+        "Innovación — 25%",
+        "Ejecución técnica — 25%",
+        "Utilidad/Impacto — 25%",
+        "UX — 15%",
+        "Pitch — 10%"
+      ]
+    },
+    "coc": {
+      "title": "Código de Conducta",
+      "desc": "Esperamos respeto mutuo y un ambiente seguro. Lee nuestro Código de Conducta:",
+      "link": "Abrir CoC",
+      "url": "#{cocUrl}"
+    },
+    "sections": {
+      "onboarding": {
+        "title": "Onboarding y logística",
+        "items": [
+          "Check‑in con documento; credencial visible durante el evento",
+          "Únete al grupo de Telegram para avisos y soporte"
+        ]
+      },
+      "teams": {
+        "title": "Equipos y elegibilidad",
+        "items": [
+          "Equipos remotos (2–4 personas; solo permitido, pero no recomendado)",
+          "Los mentores orientan; el trabajo final debe ser del equipo",
+          "Contribuciones externas solo con crédito explícito y dentro de las reglas"
+        ]
+      },
+      "submissions": {
+        "title": "Envíos",
+        "items": [
+          "Repo público con README (setup, pitch y roadmap)",
+          "Demo funcional (link, video corto o live demo)",
+          "Deadline estricto; envíos tardíos no serán evaluados"
+        ]
+      },
+      "ip": {
+        "title": "Propiedad intelectual",
+        "items": [
+          "El código pertenece al equipo; elige licencia (MIT/Apache recomendadas)",
+          "El uso de terceros debe respetar licencias y créditos",
+          "Comparte datasets solo si estás autorizado"
+        ]
+      },
+      "mentorship": {
+        "title": "Mentoría y recursos",
+        "items": [
+          "Mentores ayudan con dudas y dirección, no codifican por el equipo",
+          "APIs, SDKs y plantillas permitidos si se citan en el README",
+          "Evita dependencias que requieran llaves privadas fuera de tu control"
+        ]
+      },
+      "judging": {
+        "title": "Evaluación y criterios",
+        "items": [
+          "Innovación y relevancia del problema",
+          "Ejecución técnica y seguridad (pruebas/validaciones mínimas)",
+          "Utilidad/impacto y claridad del pitch",
+          "UX y completitud del MVP"
+        ]
+      },
+      "conduct": {
+        "title": "Conducta y ética",
+        "items": [
+          "Respeto mutuo; tolerancia cero al acoso y la discriminación",
+          "Nada de scraping abusivo, ataques o spam a servicios de terceros",
+          "Mantén el espacio limpio y sigue las indicaciones del equipo"
+        ]
+      },
+      "prizes": {
+        "title": "Premios y pagos",
+        "items": [
+          "Los premios pueden ser pagados por patrocinadores/fundaciones (el evento no custodia fondos)",
+          "El pagador puede solicitar KYC/Wallet",
+          "Equipos ganadores deben estar presentes en el anuncio para ser elegibles"
+        ]
+      }
+    },
+    "items": [
+      "Equipos remotos (2–4 personas; solo permitido, pero no recomendado)",
+      "Únete al Telegram para avisos y soporte",
+      "Envío: repo público con README (setup, pitch, roadmap) y demo funcional (link, video corto o en vivo)",
+      "Deadline estricto; envíos tardíos no serán evaluados",
+      "PI: el código pertenece al equipo; elige licencia (MIT/Apache recomendadas); respeta licencias de terceros",
+      "Mentoría: mentores orientan, no codifican por el equipo; cita APIs/SDKs/plantillas en el README",
+      "Evaluación: innovación y relevancia; ejecución técnica; utilidad/impacto; UX; claridad del pitch",
+      "Conducta: respeto mutuo; tolerancia cero al acoso y la discriminación; mantén el espacio limpio y sigue las indicaciones del equipo",
+      "Premios: pagados por patrocinadores/fundaciones; el pagador puede solicitar KYC/wallet; los equipos ganadores deben estar presentes en el anuncio para ser elegibles"
+    ]
+  },
+  "resources": {
+    "title": "Recursos Útiles",
+    "tutorialsTitle": "Tutoriales",
+    "ptTitle": "Basecamp en Portugués",
+    "ptChannel": "Canal de YouTube — Starknet Portuguese",
+    "enTitle": "Tutoriales oficiales de Starknet (EN)",
+    "ptBasecamp": {
+      "title": "Basecamp en Portugués",
+      "items": [
+        {
+          "title": "Basecamp #1: Fundamentos de Starknet (PT)",
+          "desc": "Presenta el ecosistema Starknet, pruebas ZK, Cairo e instalación de herramientas. En portugués.",
+          "href": "https://www.youtube.com/watch?v=Hqy87SZBDxE"
+        },
+        {
+          "title": "Basecamp #2: Continuación práctica (PT)",
+          "desc": "Continuación directa con profundización práctica en herramientas y conceptos de la sesión #1. En portugués.",
+          "href": "https://www.youtube.com/watch?v=znDZK2u4XzE"
+        },
+        {
+          "title": "Basecamp #3: Desarrollo con Cairo y Starknet (PT)",
+          "desc": "Pruebas, cuentas, deploys, integración con frontend y ejercicios Starklings. En portugués.",
+          "href": "https://www.youtube.com/watch?v=iSI4JMQ62NY"
+        }
+      ]
+    },
+    "links": {
+      "s1": "Basecamp 12 Session 1: Starknet Fundamentals",
+      "s2": "Basecamp 12 Session 2: Cairo Smart Contracts",
+      "b1": "Basecamp 12 Bonus: How to Deploy Locally After Renaming a Smart Contract",
+      "s3": "Basecamp 12 Session 3: Testing with Foundry",
+      "b2": "Basecamp 12 Bonus: Updating Test Suite",
+      "s4": "Basecamp 12 Session 4: Frontend with Scaffold",
+      "s5": "Basecamp 12 Session 5: Building Games with Dojo"
+    }
+  },
+  "submission": {
+    "title": "Día de Envío",
+    "subtitle": "Qué esperamos de tu equipo",
+    "deck": {
+      "title": "Presentación (estilo PowerPoint)",
+      "desc": "Diapositivas con problema, solución, diferenciales y próximos pasos."
+    },
+    "solution": {
+      "title": "Nombre de la solución y descripción",
+      "desc": "Un resumen claro de qué hace el proyecto y para quién."
+    },
+    "video": {
+      "title": "Video pitch",
+      "desc": "Video breve mostrando la utilidad de la aplicación (enlace)."
+    },
+    "team": {
+      "title": "Equipo y contactos",
+      "desc": "Integrantes con GitHub y LinkedIn; Telegram si está disponible."
+    },
+    "repo": {
+      "title": "Repositorio en GitHub",
+      "desc": "Enlace al repo con README (setup, pitch, roadmap) e instrucciones de uso."
+    },
+    "form": {
+      "title": "Formulario de Envío",
+      "desc": "El enlace se compartirá en los próximos días en nuestro grupo de Telegram.",
+      "joinTelegram": "Unirse a Telegram"
+    },
+    "templates": {
+      "deck": "Plantilla de presentación",
+      "readme": "Plantilla de README"
+    },
+    "items": []
+  },
+  "prizes": {
+    "tagline": "Reconociendo innovación, ejecución e impacto en Web3.",
+    "payment": {
+      "pt": "Los premios serán pagados directamente por",
+      "pt2": "Los organizadores no reciben, custodian ni distribuyen valores.",
+      "en": "EN: Prizes are paid directly by the Starknet Foundation; organizers do not handle funds.",
+      "kyc": "Aviso: Es probable que los pagos requieran KYC y puedan demorar desde algunos días hasta algunas semanas en completarse, ya que la Fundación sigue un proceso interno de desembolso."
+    }
   },
   "about": {
     "title": "Una Inmersión Web3 en el Paraíso",
@@ -23,7 +219,8 @@
     "buttons": {
       "register": "Registrarse en el Evento",
       "learnMore": "Saber Más",
-      "registerOnLuma": "REGISTRARSE EN LUMA"
+      "registerOnLuma": "REGISTRARSE EN LUMA",
+      "registerTemporarilyUnavailable": "Inscripciones temporalmente no disponibles"
     },
     "telegram": {
       "title": "Comunidad",
@@ -33,7 +230,7 @@
   },
   "alexandre": {
     "title": "Alexandre Melo",
-    "subtitle": "Organizador de CryptoLar 2025 y líder comunitario Web3",
+    "subtitle": "Fundador de CryptoLar y OpenSense; Investigador de seguridad Web3",
     "web3_start": "Inicio en Web3 (2020)",
     "web3_start_desc": "Desarrollador con más de 15 años de experiencia, comencé mi viaje en Web3 en 2020.",
     "education": "Formación",
@@ -65,7 +262,7 @@
       "first": "1er Lugar: R$ 8.000",
       "second": "2do Lugar: R$ 4.500",
       "third": "3er Lugar: R$ 2.500",
-      "duration": "Duración: 48 horas",
+      "duration": "Duración: 1 semana",
       "teams": "Equipos: 2-4 personas",
       "date": "17 de Agosto de 2025 - 10 AM",
       "location": "MOIC Digital"
@@ -212,6 +409,15 @@
   "footer": {
     "rights_reserved": "Todos los derechos reservados"
   },
+  
+  "sponsors": {
+    "codespect": {
+      "blurb": "Equipo de investigación de seguridad especializado en Starknet."
+    },
+    "moic": {
+      "blurb": "Investigación de mercado y contenido white‑label en 25+ países."
+    }
+  },
   "blocks_until_event": "¡Estimado {blocks} bloques hasta el evento!",
   "blocks_disclaimer": "(Estimación basada en el tiempo promedio de bloque. Los datos en tiempo real requieren un servicio de backend.)",
   "blocks_loading": "Cargando cuenta regresiva de bloques...",
@@ -233,5 +439,25 @@
     "ethereum": "Ethereum",
     "bitcoin": "Bitcoin",
     "updated": "Actualizado"
+  },
+  "gallery": {
+    "title": "Galería del Evento",
+    "subtitle": "Sube tus fotos y videos de CryptoLar 2025.",
+    "dropHint": "Arrastra y suelta medios aquí o usa el botón de abajo.",
+    "uploadBtn": "Subir Medios",
+    "processing": "Procesando...",
+    "export": "Exportar JSON",
+    "import": "Cargar desde /gallery.json",
+    "hintPersistent": "Las cargas se guardan localmente en tu navegador por conveniencia. Para que sean permanentes en el sitio, coloca un archivo gallery.json en la carpeta public u hospeda los archivos y haz referencia a ellos allí.",
+    "empty": "Aún no hay medios — ¡sé el primero en agregar recuerdos!",
+    "importError": "No se pudo cargar /gallery.json. Asegúrate de que el archivo exista."
+  },
+  "thankyou": {
+    "title": "¡Gracias, familia CryptoLar!",
+    "subtitle": "A todos los que lo hicieron posible — su energía, ideas y apoyo lo convirtieron en algo especial.",
+    "attendees": "Asistentes",
+    "speakers": "Oradores",
+    "sponsors": "Patrocinadores",
+    "volunteers": "Voluntarios"
   }
 }

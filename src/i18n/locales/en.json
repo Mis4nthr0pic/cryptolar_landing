@@ -3,8 +3,204 @@
     "date": "August 16, 2025 — Florianópolis",
     "tagline": "CryptoLar is not just an event. It's the beginning of a movement.",
     "subtitle": "A premier gathering of blockchain innovators featuring talks from Ethereum's leading minds in the beautiful setting of Florianópolis.",
+    "title": "CryptoLar × Starknet: The Hackathon — Act I",
+    "datetimeVenue": "September 27, MOIC DIGITAL",
+    "hackathonBlurb": "A collaborative sprint to prototype solutions on Ethereum/Starknet. Bring a real problem, work with mentors, and deliver a functional MVP by the end of the day.",
     "sponsors": "Sponsors",
     "scroll": "Scroll"
+  },
+  "rules_extra": {
+    "weights": {
+      "title": "Scoring Weights",
+      "items": [
+        "Innovation — 25%",
+        "Technical execution — 25%",
+        "Utility/Impact — 25%",
+        "UX — 15%",
+        "Pitch — 10%"
+      ]
+    },
+    "coc": {
+      "title": "Code of Conduct",
+      "desc": "We expect mutual respect and a safe environment. Read our Code of Conduct:",
+      "link": "Open CoC",
+      "url": "#{cocUrl}"
+    }
+  },
+  "rules": {
+    "title": "Rules",
+    "weights": {
+      "title": "Scoring Weights",
+      "items": [
+        "Innovation — 25%",
+        "Technical execution — 25%",
+        "Utility/Impact — 25%",
+        "UX — 15%",
+        "Pitch — 10%"
+      ]
+    },
+    "coc": {
+      "title": "Code of Conduct",
+      "desc": "We expect mutual respect and a safe environment. Read our Code of Conduct:",
+      "link": "Open CoC",
+      "url": "#{cocUrl}"
+    },
+    "sections": {
+      "onboarding": {
+        "title": "Onboarding & logistics",
+        "items": [
+          "Check-in with ID; badge visible throughout the event",
+          "Join the Telegram group for announcements and support"
+        ]
+      },
+      "teams": {
+        "title": "Teams & eligibility",
+        "items": [
+          "Remote teams (2–4 people; solo allowed, but discouraged)",
+          "Mentors can guide, but the final work must be the team's",
+          "External contributions only with explicit credit and within rules"
+        ]
+      },
+      "submissions": {
+        "title": "Submissions",
+        "items": [
+          "Public repo with README (setup, pitch, roadmap)",
+          "Functional demo (link, short video, or live demo)",
+          "Hard deadline; late submissions will not be judged"
+        ]
+      },
+      "ip": {
+        "title": "Intellectual property",
+        "items": [
+          "Code belongs to the team; choose your license (MIT/Apache recommended)",
+          "Third‑party use must keep licenses and credits",
+          "Share datasets only if you are authorized to do so"
+        ]
+      },
+      "mentorship": {
+        "title": "Mentorship & resources",
+        "items": [
+          "Mentors help with guidance, not coding for teams",
+          "APIs, SDKs, templates allowed if cited in the README",
+          "Avoid dependencies that require private keys outside your control"
+        ]
+      },
+      "judging": {
+        "title": "Judging & criteria",
+        "items": [
+          "Innovation and problem relevance",
+          "Technical execution and security (basic tests/validations)",
+          "Utility/impact and clarity of the pitch",
+          "UX and MVP completeness"
+        ]
+      },
+      "conduct": {
+        "title": "Conduct & ethics",
+        "items": [
+          "Mutual respect; zero tolerance for harassment and discrimination",
+          "No abusive scraping, attacks, or spam to third‑party services",
+          "Keep the space clean and follow staff guidance"
+        ]
+      },
+      "prizes": {
+        "title": "Prizes & payouts",
+        "items": [
+          "Prizes may be paid by sponsors/foundations (event does not custody funds)",
+          "KYC/Wallet requirements may be requested by the payer",
+          "Winning teams must be present at the announcement to be eligible"
+        ]
+      }
+    },
+    "items": [
+      "Remote teams (2–4 people; solo allowed but discouraged)",
+      "Join the Telegram for announcements and support",
+      "Submission: public repo with README (setup, pitch, roadmap) and functional demo (link, short video, or live)",
+      "Hard deadline; late submissions will not be judged",
+      "IP: code belongs to the team; choose a license (MIT/Apache recommended); respect third‑party licenses",
+      "Mentorship: mentors guide, don’t code for teams; cite APIs/SDKs/templates in the README",
+      "Judging: innovation and relevance; technical execution; utility/impact; UX; clarity of the pitch",
+      "Conduct: mutual respect; zero tolerance for harassment and discrimination; keep the space clean and follow staff guidance",
+      "Prizes: paid by sponsors/foundations; KYC/wallet may be required; winning teams must be present at the announcement to be eligible"
+    ]
+  },
+  "resources": {
+    "title": "Useful Resources",
+    "tutorialsTitle": "Tutorials",
+    "ptTitle": "Basecamp in Portuguese",
+    "ptChannel": "YouTube Channel — Starknet Portuguese",
+    "enTitle": "Starknet Official Tutorials (EN)",
+    "ptBasecamp": {
+      "title": "Basecamp in Portuguese",
+      "items": [
+        {
+          "title": "Basecamp #1: Starknet Fundamentals (PT)",
+          "desc": "Introduces Starknet ecosystem, ZK proofs, Cairo, and tooling setup. In Portuguese.",
+          "href": "https://www.youtube.com/watch?v=Hqy87SZBDxE"
+        },
+        {
+          "title": "Basecamp #2: Hands‑on continuation (PT)",
+          "desc": "Direct continuation with practical deepening of tools and concepts from session #1. In Portuguese.",
+          "href": "https://www.youtube.com/watch?v=znDZK2u4XzE"
+        },
+        {
+          "title": "Basecamp #3: Building with Cairo & Starknet (PT)",
+          "desc": "Covers tests, accounts, deploys, frontend integration, and Starklings exercises. In Portuguese.",
+          "href": "https://www.youtube.com/watch?v=iSI4JMQ62NY"
+        }
+      ]
+    },
+    "links": {
+      "s1": "Basecamp 12 Session 1: Starknet Fundamentals",
+      "s2": "Basecamp 12 Session 2: Cairo Smart Contracts",
+      "b1": "Basecamp 12 Bonus: How to Deploy Locally After Renaming a Smart Contract",
+      "s3": "Basecamp 12 Session 3: Testing with Foundry",
+      "b2": "Basecamp 12 Bonus: Updating Test Suite",
+      "s4": "Basecamp 12 Session 4: Frontend with Scaffold",
+      "s5": "Basecamp 12 Session 5: Building Games with Dojo"
+    }
+  },
+  "submission": {
+    "title": "Submission Day",
+    "subtitle": "What we expect from your team",
+    "deck": {
+      "title": "Presentation (PowerPoint style)",
+      "desc": "Slides covering problem, solution, differentiators, and next steps."
+    },
+    "solution": {
+      "title": "Solution name and description",
+      "desc": "A clear summary of what the project does and for whom."
+    },
+    "video": {
+      "title": "Video pitch",
+      "desc": "A short video demonstrating the application’s usefulness (link)."
+    },
+    "team": {
+      "title": "Team and contacts",
+      "desc": "Team members with GitHubs and LinkedIns; Telegram if available."
+    },
+    "repo": {
+      "title": "GitHub repository",
+      "desc": "Repo link with README (setup, pitch, roadmap) and usage instructions."
+    },
+    "form": {
+      "title": "Submission Form",
+      "desc": "The link will be shared in the next few days in our Telegram group.",
+      "joinTelegram": "Join Telegram"
+    },
+    "templates": {
+      "deck": "Deck template",
+      "readme": "README template"
+    },
+    "items": []
+  },
+  "prizes": {
+    "tagline": "Recognizing innovation, execution, and impact in Web3.",
+    "payment": {
+      "pt": "Prizes paid directly by",
+      "pt2": "Organizers do not receive, custody, or distribute any funds.",
+      "en": "EN: Prizes are paid directly by the Starknet Foundation; organizers do not handle funds.",
+      "kyc": "Note: Payments will likely require KYC and may take from a few days to a few weeks to complete, as the Foundation follows an internal disbursement process."
+    }
   },
   "about": {
     "title": "A Web3 Immersion in Paradise",
@@ -23,7 +219,8 @@
     "buttons": {
       "register": "Register for Event",
       "learnMore": "Learn More",
-      "registerOnLuma": "REGISTER ON LUMA"
+      "registerOnLuma": "REGISTER ON LUMA",
+      "registerTemporarilyUnavailable": "Registration temporarily unavailable"
     },
     "telegram": {
       "title": "Community",
@@ -33,7 +230,7 @@
   },
   "alexandre": {
     "title": "Alexandre Melo",
-    "subtitle": "CryptoLar 2025 Organizer and Web3 Community Leader",
+    "subtitle": "Founder of CryptoLar and OpenSense; Web3 Security Researcher",
     "web3_start": "Web3 Start (2020)",
     "web3_start_desc": "Developer with over 15 years of experience, I started my Web3 journey in 2020.",
     "education": "Education",
@@ -63,7 +260,7 @@
     "details": {
       "title": "Hackathon Details",
       "prizes": "R$ 15,000 in prizes for the best projects",
-      "duration": "Duration: 48 hours",
+      "duration": "Duration: 1 week",
       "teams": "Teams: 2-4 people",
       "categories": "Multiple prize categories available",
       "date": "August 17, 2025 - 09 AM",
@@ -211,6 +408,15 @@
   "footer": {
     "rights_reserved": "All rights reserved"
   },
+  
+  "sponsors": {
+    "codespect": {
+      "blurb": "Security research team specialized in Starknet."
+    },
+    "moic": {
+      "blurb": "Market research and white‑label content across 25+ countries."
+    }
+  },
   "blocks_until_event": "Estimated {blocks} blocks until the event!",
   "blocks_disclaimer": "(Estimation based on average block time. Real-time data requires a backend service.)",
   "blocks_loading": "Loading block countdown...",
@@ -232,5 +438,25 @@
     "ethereum": "Ethereum",
     "bitcoin": "Bitcoin",
     "updated": "Updated"
+  },
+  "gallery": {
+    "title": "Event Gallery",
+    "subtitle": "Upload your photos and videos from CryptoLar 2025.",
+    "dropHint": "Drag & drop media here or use the button below.",
+    "uploadBtn": "Upload Media",
+    "processing": "Processing...",
+    "export": "Export JSON",
+    "import": "Load from /gallery.json",
+    "hintPersistent": "Uploads are saved locally in your browser for convenience. To make them permanent for the website, place a gallery.json file in the public folder or host media files and reference them there.",
+    "empty": "No media yet — be the first to add memories!",
+    "importError": "Could not load /gallery.json. Ensure the file exists."
+  },
+  "thankyou": {
+    "title": "Thank you, CryptoLar family!",
+    "subtitle": "To everyone who made it happen — your energy, ideas, and support turned this into something special.",
+    "attendees": "Attendees",
+    "speakers": "Speakers",
+    "sponsors": "Sponsors",
+    "volunteers": "Volunteers"
   }
 }

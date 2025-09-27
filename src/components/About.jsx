@@ -106,28 +106,15 @@ const About = ({ id }) => {
             </div>
           </div>
 
-          {/* CTA Box */}
+          {/* CTA Box (registration removed) */}
           <div className="bg-gradient-to-br from-black/95 via-gray-900/90 to-black/95 backdrop-blur-xl rounded-2xl p-4 md:p-5 border border-white/30 shadow-2xl text-white relative overflow-hidden">
-            {/* Glossy overlay */}
             <div className="absolute inset-0 bg-gradient-to-br from-white/10 via-transparent to-transparent rounded-2xl pointer-events-none"></div>
             <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-yellow-400 via-orange-400 to-yellow-400 rounded-t-2xl"></div>
             <div className="relative z-10 flex flex-col items-center justify-center text-center">
               <h3 className="text-base md:text-lg font-semibold mb-2 md:mb-3 text-white">
                 Participe
               </h3>
-              <a 
-                href="https://lu.ma/cryptolar" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="relative bg-gradient-to-r from-yellow-400 via-orange-400 to-yellow-500 hover:from-yellow-300 hover:via-orange-300 hover:to-yellow-400 text-black font-bold py-2 px-3 md:px-4 rounded-lg transition-all duration-300 transform hover:scale-110 text-xs md:text-sm shadow-2xl animate-pulse overflow-hidden group"
-                style={{
-                  boxShadow: '0 0 20px rgba(251, 191, 36, 0.6), 0 0 40px rgba(251, 191, 36, 0.4), 0 0 60px rgba(251, 191, 36, 0.2)'
-                }}
-              >
-                {/* Shining effect overlay */}
-                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700 ease-in-out"></div>
-                <span className="relative z-10">📅 {t('about.buttons.registerOnLuma')}</span>
-              </a>
+              <p className="text-gray-300 text-xs md:text-sm">{t('about.buttons.registerTemporarilyUnavailable', 'Inscrições temporariamente indisponíveis')}</p>
             </div>
           </div>
 

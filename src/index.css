@@ -5,6 +5,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* Custom Scrollbar Styling */
 ::-webkit-scrollbar {
   width: 8px;
@@ -242,6 +246,35 @@
 
 .animate-sparkle {
   animation: sparkle 3s infinite;
+}
+
+/* Reveal on scroll */
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 600ms ease, transform 600ms ease;
+}
+.reveal.reveal-active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Lightweight confetti pieces */
+.confetti-piece {
+  top: -20px;
+  width: 10px;
+  height: 10px;
+  border-radius: 2px;
+  animation: confettiFall 4s linear infinite;
+}
+.confetti-piece:nth-child(3n) { background: #fbbf24; }
+.confetti-piece:nth-child(3n+1) { background: #60a5fa; }
+.confetti-piece:nth-child(3n+2) { background: #a78bfa; }
+
+@keyframes confettiFall {
+  0% { transform: translateY(-10px) rotate(0deg); opacity: 0; }
+  10% { opacity: 1; }
+  100% { transform: translateY(120%) rotate(360deg); opacity: 0.6; }
 }
 
 /* Moon styling */
@@ -969,4 +1002,86 @@ html {
     box-shadow: 0 0 0 0 rgba(34, 197, 94, 0);
     transform: scale(1);
   }
+}
+/* Flame-like animated glow for cards */
+.fire-glow {
+  position: absolute;
+  inset: -8px;
+  border-radius: 18px;
+  background: conic-gradient(from 0deg, rgba(255,160,0,0.25), rgba(255,80,0,0.2), rgba(255,220,0,0.25), rgba(255,80,0,0.2), rgba(255,160,0,0.25));
+  filter: blur(16px) saturate(120%);
+  animation: flameFlicker 3s ease-in-out infinite;
+  z-index: 0;
+}
+
+@keyframes flameFlicker {
+  0% { opacity: 0.45; transform: rotate(0deg) scale(1); }
+  25% { opacity: 0.6; transform: rotate(6deg) scale(1.02); }
+  50% { opacity: 0.5; transform: rotate(-4deg) scale(0.99); }
+  75% { opacity: 0.65; transform: rotate(3deg) scale(1.01); }
+  100% { opacity: 0.45; transform: rotate(0deg) scale(1); }
+}
+
+/* Submission section visuals */
+.submission-bg {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(1000px 400px at 10% 0%, rgba(59,130,246,0.15), transparent 60%),
+              radial-gradient(800px 300px at 90% 20%, rgba(168,85,247,0.15), transparent 60%);
+  filter: blur(20px);
+  pointer-events: none;
+}
+
+.gradient-text {
+  background: linear-gradient(90deg, #93c5fd, #c084fc, #f9a8d4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.neon-surface {
+  background: linear-gradient(180deg, rgba(255,255,255,0.05), rgba(255,255,255,0.02));
+  border: 1px solid rgba(255,255,255,0.1);
+  backdrop-filter: blur(6px);
+}
+
+.neon-ring {
+  border-radius: 16px;
+  background: conic-gradient(from 0deg, rgba(147,197,253,0.2), rgba(192,132,252,0.2), rgba(147,197,253,0.2));
+  filter: blur(18px);
+}
+
+.accent-bar {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 100%;
+  background: linear-gradient(90deg, rgba(250,204,21,0.7), rgba(251,146,60,0.6), rgba(250,204,21,0.7));
+  opacity: 0.8;
+}
+
+.step-badge {
+  width: 32px;
+  height: 32px;
+  border-radius: 9999px;
+  background: radial-gradient(circle at 30% 30%, #fde68a, #f59e0b);
+  box-shadow: 0 0 18px rgba(245, 158, 11, 0.6);
+  color: #111827;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.gold-prize-glow {
+  background: linear-gradient(135deg, #ffd700, #f59e0b, #ffed4a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-shadow: 0 0 18px rgba(255, 215, 0, 0.5), 0 0 36px rgba(245, 158, 11, 0.35);
+  animation: goldPulse 2.2s ease-in-out infinite;
+}
+
+@keyframes goldPulse {
+  0%, 100% { filter: drop-shadow(0 0 0 rgba(255, 215, 0, 0)); }
+  50% { filter: drop-shadow(0 0 12px rgba(255, 215, 0, 0.5)); }
 }
